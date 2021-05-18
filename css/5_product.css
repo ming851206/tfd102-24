@@ -128,7 +128,7 @@ div.process_container div.arrow{
 }
 /* 訂購種類 */
 div.category{
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
 }
 div.category a div img{
