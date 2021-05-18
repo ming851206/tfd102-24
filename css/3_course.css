@@ -1,0 +1,173 @@
+@import "./common.css";
+/* banner */
+nav.nav ul.nav_list > li:nth-child(2) > a{
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);}
+div.banner{
+  background-image: url(../img/3_course/banner.png);
+  background-position: center center;
+}
+/* 當月課程 */
+div.calendar div{
+  width: 900px;
+  height: auto;
+  margin: 50px auto;
+  position: relative;
+}
+/* 進場動畫 */
+div.calendar div.aos-animate img.calendar{
+  filter: blur(0);
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+div.calendar div.aos-animate img:nth-child(2){
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 1.2s ease 1s;
+}
+div.calendar div.aos-animate img:nth-child(3){
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 1.2s ease 2s;
+}
+div.calendar div.aos-animate img:nth-child(4){
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 1.2s ease 3s;
+}
+div.calendar div.aos-animate img:nth-child(5){
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 1.2s ease 4s;
+}
+div.calendar div img.calendar{
+  width: 100%;
+  filter: blur(30px);
+  opacity: 0;
+}
+div.calendar div img.content{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0%;
+}
+
+
+/* 當月課程 */
+div.course_container{
+  width: 100%;
+  background-color: rgba(244, 239, 225, .25);
+  margin-top: 60px;
+  padding-bottom: 108px;
+}
+div.course_container h1{
+  padding-bottom: 40px;
+}
+/* 課程介紹 */
+div.course_theme {
+  opacity: 0;
+  filter: blur(20px);
+  transform: scaleX(0);
+}
+div.course_theme.aos-animate{
+  opacity: 1;
+  filter: blur(0);
+  transform: scaleX(1);
+  transition: all 1.5s ease-out;
+}
+div.course_theme h2{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 26px;
+  color: #9D7C62;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  text-decoration: 1px #9D7C62 underline;
+  text-underline-offset: 8px;
+}
+div.course_theme p{
+  letter-spacing: 1px;
+  text-indent: 1px;
+  text-align: center;
+  margin: 32px 0 40px;
+}
+/* 課程 */
+div.course_block{
+  width: 1200px;
+  margin: auto;
+  padding: 0 100px;
+  column-count: 2;
+  column-gap: 36px;
+}
+div.course_item a {
+  text-decoration: none;
+  display: inline-block;
+
+  position: relative;
+  margin-bottom: 36px;
+}
+div.course_item a img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+div.course_item a p{
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 26px;
+  color: #9D7C62;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  white-space: nowrap;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+}
+
+/* 進場動畫 */
+@keyframes pop_up{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+div.course_block.aos-animate div.course_item:nth-child(1){
+  animation: pop_up 1.2s ease-out both;
+}
+div.course_block.aos-animate div.course_item:nth-child(4){
+  animation: pop_up 1.2s ease-out .3s both;
+}
+div.course_block.aos-animate div.course_item:nth-child(2){
+  animation: pop_up 1.2s ease-out .6s both;
+}
+div.course_block.aos-animate div.course_item:nth-child(3){
+  animation: pop_up 1.2s ease-out .9s both;
+}
+div.course_item{
+  opacity: 0;
+}
+
+div.course_item a img.second{
+  display:none;
+}
+div.course_item a:hover img.first{
+  display: none;
+}
+div.course_item a:hover img.second{
+  display:inline;
+}

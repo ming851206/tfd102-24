@@ -1,0 +1,129 @@
+@import "./common.css";
+/* banner */
+nav.nav ul.nav_list > li:nth-child(1) > a{
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+div.banner{
+  background-image: url(../img/2_about_me/banner.png);
+}
+/* 關於我 */
+div.about_me{
+  width: 100%;
+  background-color: rgba(244, 239, 225, .25);
+  padding-bottom: 60px;
+}
+
+div.para{
+  width: 1200px;
+  margin: 40px auto;
+  display: block;
+}
+div.para p{
+  display: block;
+  vertical-align: middle;
+  line-height: 2.3;
+  margin-left: 75px;
+}
+@keyframes auto_play {
+  0%{
+    background-image: url(../img/2_about_me/myself_1.png);
+  }
+  20%{
+    background-image: url(../img/2_about_me/myself_1.png);
+  }
+  30%{
+    background-image: url(../img/2_about_me/myself_2.jpg);
+  }
+  50%{
+    background-image: url(../img/2_about_me/myself_2.jpg);
+  }
+  65%{
+    background-image: url(../img/2_about_me/myself_3.png);
+  }
+  90%{
+    background-image: url(../img/2_about_me/myself_3.png);
+  }
+  100%{
+    background-image: url(../img/2_about_me/myself_1.png);
+  }
+}
+div.para div.myself{
+  display: inline-block;
+  float: right;
+  width: 400px;
+  height: 450px;
+  margin: 25px 75px 18px 65px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: auto_play 15s linear infinite;
+}
+div.para div.myself:hover{
+  animation-play-state: paused;
+}
+/* 品牌初衷 */
+h1.about_brand{
+  padding-top: 100px;
+}
+div.para_1.aos-animate{
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1.2s ease-in;
+}
+div.para_1{
+  width: 700px;
+  height: 508px;
+  background-image: url("../img/2_about_me/scene.png");
+  background-size: cover;
+  margin: 65px auto 40px;
+  opacity: 0;
+  filter: blur(30px);
+}
+p.text_1{
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+div.para_2{
+  margin: 100px auto;
+}
+div.photo_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px 0 40px 0;
+}
+div.photo_1.aos-animate{
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2.5s ease-out;
+}
+div.photo_2.aos-animate{
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+  border-radius: 0;
+  transition: all 2s ease-out .5s;
+}
+div.photo_1, div.photo_2{
+  width: 320px;
+  height: 320px;
+  background-size: cover;
+  transform: scale(0);
+  opacity: 0;
+  filter: blur(10px);
+}
+div.photo_1{
+  background-image: url(../img/2_about_me/bouquet_1.png);
+  margin-right: 30px;
+}
+div.photo_2{
+  background-image:url(../img/2_about_me/bouquet_2.png);
+}
+p.text_2{
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2;
+}

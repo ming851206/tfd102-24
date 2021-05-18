@@ -1,0 +1,209 @@
+@import "./common.css";
+/* banner */
+nav.nav ul.nav_list > li:nth-child(2) > div.order_flower{
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+div.banner{
+  background-image: url(../img/4_course_page/banner.png);
+}
+
+/* 主課程照片 */
+div.main_container{
+  width: 100%;
+  background-color: rgba(244, 239, 225, .25);
+  display: flex;
+  justify-content: center;
+}
+div.img_container{
+  display: inline-block;
+  float: left;
+  margin: 100px 60px 58px 0px;
+  font-size: 0;
+}
+img.img_1{
+  display: inline-block;
+}
+img.img_2{
+  display: none;
+}
+img.img_3{
+  display: none;
+}
+div.img_group{
+  display: block;
+  margin-top: 50px;
+}
+img.img_2-2{
+  margin: auto 17px;
+}
+
+/* 選單 */
+div.content{
+  display: inline-block;
+  margin: 0;
+}
+div.content h1{
+  margin-top: 95px;
+  padding: 0;
+  text-align: left;
+}
+div.content h2{
+  margin: 32px 0 18px 24px;
+}
+/* 下拉選單 */
+select.time{
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  appearance: none;
+
+  color: #A8A393;
+  font-size: 18px;
+  font-family: 'Noto Serif TC', serif;
+  letter-spacing: 1px;
+
+  margin: 0 0 96px 24px;
+  border: 1px solid #A8A393;
+  outline: none;
+  padding: 6px 60px 6px 20px;
+  box-shadow: none;
+
+  background-image: url("../img/4_course_page/custom.svg");
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: right 20px top 16px;
+}
+select.time option{
+  color: #A8A393;
+  font-size: 18px;
+  border: 1px solid #A8A393;
+  letter-spacing: 1px;
+}
+/* 備註 */
+form label{
+  margin: 52px 0 24px 24px;
+  font-size: 28px;
+  color: #9D7C62;
+  letter-spacing: 5px;
+}
+form textarea{
+  margin: 8px 0 24px 24px;
+  border: 1px solid #A8A393;
+  width: 337px;
+  height: 120px;
+  resize: none;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Noto Serif TC', serif;
+  letter-spacing: 3px;
+  text-indent: 3px;
+  color: #A8A393;
+}
+button{
+  display: block;
+  border: none;
+  width: 172px;
+  height: 56px;
+  font-size: 18px;
+  color: #9D7C62;
+  font-weight: bold;
+  background-color: #F4F0ED;
+  font-family: 'Noto Serif TC', serif;;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, .8);
+  cursor: pointer;
+  margin: 50px auto 80px;
+}
+button:hover{
+  color: white;
+  background-color: #9D7C62;
+}
+/* 說明與注意事項 */
+div.explanation div:first-child{
+  margin: 10px auto 90px;
+  width: 840px;
+}
+div.explanation div:nth-child(2){
+  background-color: rgba(244, 239, 225, .25);
+  margin: 10px auto 0;
+  padding-bottom: 90px;
+}
+div.explanation div:nth-child(2) h1{
+  padding-top: 80px;
+}
+div.explanation div p{
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+div.explanation div ol{
+  display: block;
+  width: 840px;
+  padding-left: 22px;
+  letter-spacing: 1px;
+  margin: 45px auto 0;
+  line-height: 1.5;
+}
+/* 更多課程 */
+section{
+  width: 1200px;
+  padding: 0 auto 30px;
+  margin: 120px auto 90px;
+}
+section h1{
+  margin: 0 auto 0;
+  padding: 0;
+}
+section > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+section > div a:nth-child(2){
+  margin: auto 25px;
+}
+section > div a{
+  border: 1px solid rgba(0, 0, 0, .16);
+  display: block;
+  width: 100%;
+  font-size: 0;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 16px;
+}
+section > div a div{
+  position: relative;
+}
+section > div a div img{
+  width: 100%;
+}
+section > div a div h2{
+  display: none;
+  color: white;
+  line-height: 2.5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -58%);
+}
+section > div a div h2 span{
+  font-size: 20px;
+  color: lightgray;
+  letter-spacing: 2px;
+  text-indent: 2px;
+}
+section > div a:hover img{
+  filter: brightness(.35);
+}
+section > div a:hover h2{
+  display: block;
+}
+section > div a h2{
+  margin: 20px auto 10px;
+}
+section > div a p{
+  margin: 0 auto;
+}

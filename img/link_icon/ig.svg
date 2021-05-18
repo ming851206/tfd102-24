@@ -1,0 +1,8 @@
+<svg id="ig" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <circle id="icon_bg" data-name="icon bg" cx="21" cy="21" r="21" fill="#fff"/>
+  <g id="Icon_instagram" data-name="Icon instagram" transform="translate(10 11)">
+    <path id="Path_1" data-name="Path 1" d="M20.083,6.333a4.6,4.6,0,0,1,4.583,4.583v9.167a4.6,4.6,0,0,1-4.583,4.583H10.917a4.6,4.6,0,0,1-4.583-4.583V10.917a4.6,4.6,0,0,1,4.583-4.583h9.167m0-1.833H10.917A6.436,6.436,0,0,0,4.5,10.917v9.167A6.436,6.436,0,0,0,10.917,26.5h9.167A6.436,6.436,0,0,0,26.5,20.083V10.917A6.436,6.436,0,0,0,20.083,4.5Z" transform="translate(-4.5 -4.5)" fill="#9c7c62"/>
+    <path id="Path_2" data-name="Path 2" d="M25.384,12.518a1.759,1.759,0,1,1,1.759-1.759A1.755,1.755,0,0,1,25.384,12.518Z" transform="translate(-8.663 -5.48)" fill="#9c7c62"/>
+    <path id="Path_3" data-name="Path 3" d="M17.28,13.26a4.02,4.02,0,1,1-4.02,4.02,4.024,4.024,0,0,1,4.02-4.02m0-2.01a6.03,6.03,0,1,0,6.03,6.03,6.031,6.031,0,0,0-6.03-6.03Z" transform="translate(-6.28 -6.28)" fill="#9c7c62"/>
+  </g>
+</svg>

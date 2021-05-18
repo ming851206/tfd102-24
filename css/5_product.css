@@ -1,0 +1,181 @@
+@import "./common.css";
+/* banner */
+nav.nav ul.nav_list > li:nth-child(3) > div.order_flower{
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+div.banner{
+  background-image: url(../img/5_product/banner.png);
+  background-position: center;
+}
+/* 訂購說明 */
+div.explanation{
+  /* border: 1px solid blue; */
+  margin-bottom: 82px;
+}
+div.explanation h1{
+  margin-bottom: 38px;
+}
+div.explanation p{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-indent: 1px;
+  margin: 32px auto 0;
+}
+/* 訂購流程 */
+div.process{
+  width: 100%;
+  background-color: rgba(244, 239, 225, .25);
+  padding: 78px 0 136px;
+  margin-bottom: 30px;
+}
+div.process h1{
+  padding: 0;
+  margin-bottom: 38px;
+}
+div.process_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fade-in-up{
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-down{
+  0%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+div.process_container.aos-animate div.pro_1{
+  animation: fade-in-up 2.5s ease both;
+}
+div.process_container.aos-animate div.pro_2{
+  animation: fade-in-down 2s ease 0.5s both;
+}
+div.process_container.aos-animate div.pro_3{
+  animation: fade-in-up 1.5s ease 1s both;
+}
+div.process_container.aos-animate div.pro_4{
+  animation: fade-in-down 1s ease 1.5s both;
+}
+div.process_container div{
+  display: inline-block;
+  width: 211px;
+  height: 211px;
+  position: relative;
+  opacity: 0;
+}
+div.process_container div p{
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  text-indent: 1px;
+  white-space: nowrap;
+  line-height: 1.5;
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+div.process_container div.pro_3 p,
+div.process_container div.pro_4 p{
+  bottom: -22.5%;
+}
+div.pro_1{
+  background-image: url("../img/5_product/step_1.png");
+}
+div.pro_2{
+  background-image: url("../img/5_product/step_2.png");
+}
+div.pro_3{
+  background-image: url("../img/5_product/step_3.png");
+}
+div.pro_4{
+  background-image: url("../img/5_product/step_4.png");
+}
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+div.process_container.aos-animate div.arrow{
+  animation: fade-in 1s ease 2.5s both;
+}
+div.process_container div.arrow{
+  display: inline-block;
+  background-image: url("../img/5_product/arrow.svg");
+  width: 42px;
+  height: 26px;
+  background-repeat: no-repeat;
+  margin: 0 24px;
+}
+/* 訂購種類 */
+div.category{
+  width: 1200px;
+  margin: 0 auto;
+}
+div.category a div img{
+  width: 100%;
+}
+div.category a div img.second{
+  display: none;
+}
+div.category a div:hover img.first{
+  display: none;
+}
+div.category a div:hover img.second{
+  display: inline;
+}
+
+div.category h1{
+  margin-bottom: 150px;
+}
+div.category a{
+  column-count: 3;
+  font-size: 0;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  margin: auto 132px 200px;
+}
+div.category a > h2{
+  border: 1px solid #DDDDDD;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 26px;
+  color: #9D7C62;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  padding: 22px 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(244, 239, 225, .25);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+div.category a:hover > h2{
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}

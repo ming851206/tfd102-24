@@ -1,0 +1,606 @@
+@import "./common.css";
+
+@keyframes fade-in_1{
+  0%{
+    opacity: 0;
+    filter: blur(100px);
+  }
+  100%{
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+header.header{
+  animation: fade-in_1 1.5s ease-out 1s both;
+}
+/* banner */
+div.banner{
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url(../img/1_home/banner_home.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  opacity: 0;
+  animation: fade-in_1 2.2s ease-out both;
+}
+
+@keyframes slide-down {
+  0%{
+    transform: translate(-48%, -150%);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(-48%, -48%);
+    opacity: 1;
+  }
+}
+div.bg_block{
+  width: 510px;
+  height: 240px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -48%);
+  background-color: hsla(0, 0%, 100%, .75);
+  box-shadow: 0px 0px 30px 45px hsla(0, 0%, 100%, .75);
+  opacity: 0;
+  animation: slide-down 2s ease 2.1s both;
+}
+
+@keyframes slide-up {
+  0%{
+    transform: translate(-49%, 200%);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(-49%, -50%);
+    opacity: 1;
+  }
+}
+h2.bg_text{
+  letter-spacing: 10px;
+  text-indent: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  opacity: 1;
+  animation: slide-up 2s ease 2.1s both;
+}
+
+/* scroll_arrow動畫 */
+@keyframes scroll {
+  50%{
+    transform: translate(-50%, -25%);
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes shadow {
+  25%{
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+  }
+  50%{
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
+  }
+  75%{
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+  }
+  100%{
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
+  }
+}
+@keyframes fade-in_2{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: .65;
+  }
+}
+div.scroll_arrow{
+  display: inline-block;
+  background-image: url(../img/1_home/scroll_arrow.svg);
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
+  z-index: 1;
+  opacity: .65;
+  animation: fade-in_2 0.5s ease 3.8s both, scroll 2s linear infinite both, shadow 2s linear infinite both;
+}
+
+div.parent_container{
+  text-align: center;
+}
+
+/* 簡介 */
+div.brand_introduction{
+  margin: 150px auto;
+  width: 1200px
+
+}
+div.brand_introduction img{
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, .16));
+}
+div.brand_introduction h1{
+  padding-top: 45px;
+  letter-spacing: 5px;
+  text-indent: 5px;
+}
+
+
+/* 輪播 */
+div.slider_container{
+  width: 650px;
+  height: 625px;
+  margin: 52px auto 20px;
+  position: relative;
+}
+div.slider_container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+div.slider_container img {
+  animation: round 25s linear infinite;
+}
+
+@keyframes round {
+  4%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  20%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    }
+  24% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+div.slider_container img:nth-child(1) {
+  animation-delay: 0s;
+}
+div.slider_container img:nth-child(2) {
+  animation-delay: 5s;
+}
+div.slider_container img:nth-child(3) {
+  animation-delay: 10s;
+}
+div.slider_container img:nth-child(4) {
+  animation-delay: 15s;
+}
+div.slider_container img:nth-child(5) {
+  animation-delay: 20s;
+}
+div.slider_container:hover img {
+  animation-play-state: paused;
+}
+div.brand_introduction p{
+  letter-spacing: 10px;
+  text-indent: 10px;
+  line-height: 4;
+}
+
+/* 花藝課程 */
+div.course_container{
+  background-color: rgba(244, 239, 225, .25);
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+div.course_container h1{
+  padding-top: 110px;
+  margin-bottom: 24px;
+}
+
+div.course_group{
+  margin: 0 auto;
+  width: 838px;
+  position: relative;
+}
+/* 課程內容 */
+div.course_1,
+div.course_2{
+  background-color: white;
+  width: 830px;
+  height: 318px;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(1);
+  transition: transform .6s ease-out;
+}
+div.course_2{
+  margin: 100px 0;
+}
+div.course_1:hover,
+div.course_2:hover{
+  transform: scale(1.1);
+}
+div.course_1 img{
+  width: 416px;
+  height: 318px;
+  float: left;
+}
+div.course_2 img{
+  width: 416px;
+  height: 318px;
+  float: right;
+}
+div.content_1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(120%, -42%);
+}
+div.content_2 {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-128%, -47%);
+}
+div.content_1 h1,
+div.content_2 h1{
+  padding: 0;
+}
+div.content_1 h2,
+div.content_2 h2{
+  letter-spacing: 5px;
+  margin: 40px 0 14px 0;
+  text-align: center;
+}
+div.content_1 p,
+div.content_2 p{
+  text-align: center;
+}
+
+/* 更多課程按鈕 */
+a.more_courses{
+  text-decoration: none;
+}
+button.more_courses{
+  border: none;
+  width: 170px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  color: white;
+  background-color: #9C7C62;
+  font-family: 'Noto Serif TC', serif;;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%) scale(1) ;
+  transition: all .5s ease-out;
+}
+button.more_courses:hover{
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%) scale(1.1) ;
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
+}
+
+/* 訂製花禮 */
+div.product_container{
+  width: 1200px;
+  margin: 150px auto 0;
+  position: relative;
+}
+h1{
+  margin-bottom: 24px;
+}
+
+/* 鮮花花禮 */
+div.fresh_flower{
+  background-color: rgba(244, 239, 225, .25);
+  width: 896px;
+  padding: 40px 78px 40px 140px;
+}
+/* 乾燥花禮 */
+div.dried_flower{
+  width: 451px;
+  height: 518px;
+  margin-left: auto;
+  margin-right: 136px;
+  display: block;
+}
+/* 婚禮花藝 */
+div.wedding_flower{
+  background-color: rgba(244, 239, 225, 0.25);
+  width: 994px;
+  padding: 48px 516px 104px 72px;
+  margin-left: auto;
+  position: relative;
+  transform: translateY(-30%);
+}
+a.fresh_flower,
+a.dried_flower,
+a.wedding_flower{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+a.dried_flower{
+  z-index: 5;
+  transform: translateY(-20%);
+}
+/* 轉場效果 */
+a.fresh_flower:hover img,
+a.dried_flower:hover img,
+a.wedding_flower:hover img{
+  transform: scale(1.05);
+  box-shadow: 0px 3px 10px 6px rgba(0, 0, 0, 0.16);
+}
+a.fresh_flower:hover h2,
+a.wedding_flower:hover h2{
+  transform: translate(100%, -50%);
+}
+a.dried_flower:hover h2{
+  transform: translate(-100%,-50%);
+}
+/* 圖片設定 */
+a.fresh_flower img,
+a.dried_flower img,
+a.wedding_flower img{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+  position: relative;
+  transform: scale(1);
+  transition: all 1s ease-out;
+}
+a.dried_flower img{
+  z-index: 4;
+}
+a.wedding_flower img{
+  z-index: 2;
+}
+/* 文字框設定 */
+a.fresh_flower h2,
+a.dried_flower h2,
+a.wedding_flower h2{
+  letter-spacing: 10px;
+  text-indent: 10px;
+  width: 250px;
+  height: 84px;
+  line-height: 84px;
+  text-align: center;
+  background-color: #F4F0ED;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: transform 1s ease;
+}
+a.fresh_flower h2{
+  border-radius: 0 5px 5px 0;
+  right: 0;
+  z-index: 0;
+}
+a.dried_flower h2{
+  border-radius: 0 5px 5px 0;
+  z-index: 3;
+  left: 0;
+}
+a.wedding_flower h2{
+  border-radius: 0 5px 5px 0;
+  right: 0;
+  z-index: 1;
+}
+/* 了解更多按鈕 */
+button.more_product{
+  display: inline-block;
+  border: none;
+  width: 170px;
+  height: 60px;
+  font-size: 18px;
+  color: white;
+  background-color: #9C7C62;
+  font-family: 'Noto Serif TC', serif;;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 14%;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2);
+  transform: translateY(-525%) scale(1);
+  transition: all .5s ease-out;
+  }
+button.more_product:hover{
+  transform: translateY(-525%) scale(1.1);
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
+}
+
+/* blog */
+div.blog_container{
+  background-color: rgba(244, 239, 225, 0.25);
+  padding-bottom: 100px;
+}
+div.blog_container > h1{
+  padding-top: 100px;
+  margin-bottom: 24px;
+}
+
+/* blog文章 */
+@keyframes pop_up{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+div.blog_container div.blog_group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.blog_container div.blog_group div{
+  width: 362px;
+  height: 662px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  transform: scale(1);
+  position: relative;
+  transition: all 1.5s ease;
+}
+
+/* 進場動畫 1 & 3*/
+div.blog_container.aos-animate div.blog_group  div.design_sharing,
+div.blog_container.aos-animate div.blog_group  div.my_mood{
+  animation: pop_up 1.5s ease-out 0.3s backwards;
+}
+/* 進場動畫 2 */
+div.blog_container.aos-animate div.blog_group  div.flower_notes{
+  margin: auto 24px;
+  animation: pop_up 1.5s ease-out backwards;
+}
+/* 轉場 */
+div.blog_group  div.design_sharing:hover,
+div.blog_group  div.flower_notes:hover,
+div.blog_group  div.my_mood:hover{
+  box-shadow: 0px 3px 10px 6px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+/* blog內容 */
+div.blog_container div.blog_group div a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+}
+div.blog_container div.blog_group div.flower_notes{
+  margin: auto 40px;
+}
+div.blog_container div.blog_group div a img{
+  width: 362px;
+  height: 280px;
+}
+div.blog_container div.blog_group div a span.category{
+  color: white;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translate(-25%, -100%);
+}
+div.blog_container div.blog_group div.flower_notes a span.category{
+  color: #B2B2B2;
+}
+div.blog_container div.blog_group div a h2{
+  display: block;
+  letter-spacing: 3px;
+  text-align: left;
+  margin: 32px 16px 24px;
+}
+div.blog_container div.blog_group div a time{
+  display: block;
+  color: #B2B2B2;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-left: 32px;
+}
+div.blog_container div.blog_group div a p{
+  display: block;
+  width: 302px;
+  height: 154px;
+  text-align: left;
+  line-height: 2.5;
+  margin: 8px auto 15px;
+}
+div.blog_container div.blog_group div a span.more{
+  display: block;
+  color: #A8A393;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: right;
+  margin: 40px;
+}
+
+/* 結語 */
+section{
+  padding: 110px 0 90px;
+  position: relative;
+}
+div.conclusion{
+  display: block;
+  background-color: rgba(255, 255, 255, .45);
+  background-image: url(../img/1_home/iris_2.svg);
+  background-blend-mode: multiply;
+  width: 614px;
+  height: 536px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin: 0 auto;
+}
+
+/* 結語文字動畫 */
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleY(0);
+    filter: blur(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleY(1);
+    filter: blur(0);
+  }
+}
+section.aos-animate div.conclusion h2{
+  animation: appear 1.8s ease-in-out both;
+}
+div.conclusion h2{
+  display: inline-block;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+  letter-spacing: 8px;
+  text-indent: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(0);
+  transform-origin: 50% 0%;
+}
