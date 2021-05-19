@@ -569,10 +569,6 @@ div.conclusion{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   margin: 0 auto;
 }
 
