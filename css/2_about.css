@@ -24,41 +24,48 @@ div.para p{
   vertical-align: middle;
   line-height: 2.3;
   margin-left: 75px;
-}
-@keyframes auto_play {
-  0%{
-    background-image: url(../img/2_about_me/myself_1.png);
-  }
-  20%{
-    background-image: url(../img/2_about_me/myself_1.png);
-  }
-  30%{
-    background-image: url(../img/2_about_me/myself_2.jpg);
-  }
-  50%{
-    background-image: url(../img/2_about_me/myself_2.jpg);
-  }
-  65%{
-    background-image: url(../img/2_about_me/myself_3.png);
-  }
-  90%{
-    background-image: url(../img/2_about_me/myself_3.png);
-  }
-  100%{
-    background-image: url(../img/2_about_me/myself_1.png);
-  }
+  text-align: left;
 }
 div.para div.myself{
   display: inline-block;
   float: right;
   width: 400px;
   height: 450px;
-  margin: 25px 75px 18px 65px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: auto_play 15s linear infinite;
+  margin: 20px 75px 18px 65px;
+  position: relative;
 }
-div.para div.myself:hover{
+div.para div.myself img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  animation: round 15s linear infinite;
+}
+@keyframes round {
+  7%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  35%{
+    opacity:  1;
+    filter: alpha(opacity=100);
+    }
+  42%{
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+div.para div.myself img:nth-child(2) {
+  animation-delay: 5s;
+}
+div.para div.myself img:nth-child(3) {
+  animation-delay: 10s;
+}
+div.para div.myself:hover img{
   animation-play-state: paused;
 }
 /* 品牌初衷 */

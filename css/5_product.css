@@ -23,13 +23,14 @@ div.explanation p{
   letter-spacing: 1px;
   text-indent: 1px;
   margin: 32px auto 0;
+  text-align: left;
 }
 /* 訂購流程 */
 div.process{
   width: 100%;
   background-color: rgba(244, 239, 225, .25);
   padding: 78px 0 136px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 div.process h1{
   padding: 0;
@@ -128,7 +129,6 @@ div.process_container div.arrow{
 }
 /* 訂購種類 */
 div.category{
-  /* width: 1200px; */
   margin: 0 auto;
 }
 div.category a div img{
@@ -145,7 +145,8 @@ div.category a div:hover img.second{
 }
 
 div.category h1{
-  margin-bottom: 150px;
+  margin: 150px 0;
+  padding: 0;
 }
 div.category a{
   column-count: 3;

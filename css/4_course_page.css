@@ -137,6 +137,7 @@ div.explanation div:nth-child(2) h1{
 div.explanation div p{
   margin-top: 30px;
   letter-spacing: 1px;
+  text-align: left;
 }
 div.explanation div ol{
   display: block;

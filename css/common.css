@@ -22,13 +22,13 @@ header.header{
 a.logo_1{
   display: inline-block;
   position: absolute;
-  top: 50%;
+  top: 48%;
   transform: translateY(-40%);
   left: 40px;
 }
 a.logo_1 > img.logo_1{
-  width: 90%;
-  height: 90%;
+  width: 50%;
+  height: 50%;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .1));
 }
 nav.nav{
@@ -188,12 +188,12 @@ p.description{
   letter-spacing: 12px;
   text-indent: 12px;
   margin-bottom: 70px;
-  text-align: center;
 }
 p{
   color: #A8A393;
   font-size: 18px;
   letter-spacing: 1px;
+  text-align: center;
 }
 /* footer */
 footer{

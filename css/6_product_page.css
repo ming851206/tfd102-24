@@ -74,6 +74,7 @@ div.slider_container img {
   right: 0;
   opacity: 0;
   filter: alpha(opacity=0);
+  animation: round 15s linear infinite;
 }
 div.slider_container h2.more{
   color: white;
@@ -86,9 +87,6 @@ div.slider_container h2.more{
   left: 50%;
   transform: translate(-50%, -70%);
 }
-div.slider_container img {
-  animation: round 15s linear infinite;
-}
 @keyframes round {
   7%{
     opacity: 1;
@@ -98,13 +96,10 @@ div.slider_container img {
     opacity:  1;
     filter: alpha(opacity=100);
     }
-  37%{
+  42%{
     opacity: 0;
     filter: alpha(opacity=0);
   }
-}
-div.slider_container img:nth-child(1) {
-  animation-delay: 0s;
 }
 div.slider_container img:nth-child(2) {
   animation-delay: 5s;
