@@ -98,6 +98,7 @@ ul.nav_list > li > div.order_flower > ul.order_flower_list > li > a{
   background-color: white;
   text-decoration: none;
   text-align: center;
+  text-shadow: none;
   padding: 12px 0;
   width: 100%;
   box-shadow: 1px 1px 5px 0px #A8A393;
