@@ -34,7 +34,7 @@ div.contact_info .aos-animate img{
   transform: scaleX(1);
   opacity: 1;
   filter: blur(0);
-  transition: all 2s ease;
+  transition: all 1.3s ease;
 }
 /* 內文設定與動畫 */
 div.contact_info div.all_info > div{
@@ -203,7 +203,7 @@ div.conclusion{
   }
 }
 section.aos-animate div.conclusion h2{
-  animation: appear 1.8s ease-in-out both;
+  animation: appear 1.2s ease-in-out both;
 }
 div.conclusion h2{
   display: inline-block;

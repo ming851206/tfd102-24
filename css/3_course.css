@@ -67,22 +67,24 @@ div.course_container h1{
   padding-bottom: 40px;
 }
 /* 課程介紹 */
-div.course_theme {
+/* div.course_theme {
   opacity: 0;
   filter: blur(20px);
   transform: scaleX(0);
 }
-div.course_theme.aos-animate{
+/* 文字說明動畫 */
+/* div.course_theme.aos-animate{
   opacity: 1;
   filter: blur(0);
   transform: scaleX(1);
   transition: all 1.5s ease-out;
-}
+} */
 div.course_theme h2{
+  text-align: center;
   margin: 0 auto;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 0;
   font-size: 26px;
   color: #9D7C62;
@@ -136,7 +138,7 @@ div.course_item a p{
 }
 
 /* 進場動畫 */
-@keyframes pop_up{
+/* @keyframes pop_up{
   0%{
     opacity: 0;
     transform: scale(0);
@@ -160,7 +162,7 @@ div.course_block.aos-animate div.course_item:nth-child(3){
 }
 div.course_item{
   opacity: 0;
-}
+} */
 
 div.course_item a img.second{
   display:none;

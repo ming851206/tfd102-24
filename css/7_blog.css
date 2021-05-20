@@ -58,7 +58,7 @@ div.grid_container{
   }
 }
 div.grid_item.aos-animate{
-  animation: pop_up 2.5s ease both;
+  animation: pop_up 2.3s ease both;
 }
 div.grid_item{
   position: relative;
@@ -67,7 +67,7 @@ div.grid_item{
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 div.grid_item:hover{
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .6);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
   transition: all .6s ease-in;
 }
 div.grid_item:nth-child(1){
