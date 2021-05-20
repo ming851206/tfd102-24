@@ -79,6 +79,8 @@ ul.nav_list > li > div.order_flower:hover{
 }
 ul.nav_list > li > div.order_flower:hover > ul.order_flower_list{
   opacity: 1;
+  z-index: 1;
+  transition: opacity .5s;
 }
 ul.nav_list > li > div.order_flower > ul.order_flower_list{
   margin: 0;
@@ -86,10 +88,12 @@ ul.nav_list > li > div.order_flower > ul.order_flower_list{
   list-style: none;
   width: 100%;
   position: absolute;
+  display: inline;
   right: 0;
   top: 100%;
   opacity: 0;
-  transition: opacity .5s ease;
+  z-index: -1;
+  transition: opacity .5s, z-index 0s ease .5s;
 }
 ul.nav_list > li > div.order_flower > ul.order_flower_list > li > a{
   display: block;
@@ -102,7 +106,6 @@ ul.nav_list > li > div.order_flower > ul.order_flower_list > li > a{
   padding: 12px 0;
   width: 100%;
   box-shadow: 1px 1px 5px 0px #A8A393;
-  z-index: 1;
 }
 ul.nav_list > li > div.order_flower > ul.order_flower_list > li:hover > a{
   color:  #B2B2B2;
