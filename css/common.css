@@ -57,6 +57,7 @@ ul.nav_list > li > a{
   padding: 20px;
   margin-right: 25px;
   height: 100%;
+  white-space: nowrap;
 }
 ul.nav_list > li > a:hover{
   color: #B2B2B2;
@@ -71,6 +72,7 @@ ul.nav_list > li > div.order_flower{
   text-align: center;
   vertical-align: middle;
   position: relative;
+  white-space: nowrap;
 }
 ul.nav_list > li > div.order_flower:hover{
   color: #B2B2B2;
