@@ -145,17 +145,18 @@ div.category a div:hover img.second{
 }
 
 div.category h1{
-  margin: 150px 0;
+  margin: 150px auto;
   padding: 0;
 }
 div.category a{
   column-count: 3;
   font-size: 0;
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  width: 936px;
   align-items: center;
   position: relative;
-  margin: auto 132px 200px;
+  margin: auto auto 200px;
 }
 div.category a > h2{
   border: 1px solid #DDDDDD;
@@ -167,7 +168,7 @@ div.category a > h2{
   font-weight: normal;
   letter-spacing: 5px;
   text-indent: 5px;
-  padding: 22px 0;
+  padding: 20px 0;
   width: 100%;
   text-align: center;
   background-color: rgba(244, 239, 225, .25);
