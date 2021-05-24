@@ -223,7 +223,7 @@ div.course_2{
   overflow: hidden;
   position: relative;
   transform: scale(1);
-  transition: transform .5s ease-out;
+  transition: transform .8s ease-out;
 }
 div.course_2{
   margin: 100px 0;
@@ -253,7 +253,7 @@ div.content_2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-128%, -43%);
+  transform: translate(-128%, -40%);
 }
 div.content_1 h1,
 div.content_2 h1{
@@ -373,7 +373,7 @@ a.wedding_flower img{
   z-index: 1;
   position: relative;
   transform: scale(1);
-  transition: all 1s ease-out;
+  transition: all 1.2s ease-out;
 }
 a.dried_flower img{
   z-index: 4;
@@ -395,7 +395,7 @@ a.wedding_flower h2{
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  transition: transform 1s ease;
+  transition: transform 1.2s ease;
 }
 a.fresh_flower h2{
   border-radius: 0 5px 5px 0;
