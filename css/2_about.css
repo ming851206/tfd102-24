@@ -5,7 +5,7 @@ nav.nav ul.nav_list > li:nth-child(1) > a{
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 }
 div.banner{
-  background-image: url(../img/2_about_me/banner.png);
+  background-image: url(../img/2_about_me/banner.jpg);
 }
 /* 關於我 */
 div.about_me{
