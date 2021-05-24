@@ -80,7 +80,7 @@ div.para_1.aos-animate{
 div.para_1{
   width: 700px;
   height: 508px;
-  background-image: url("../img/2_about_me/scene.png");
+  background-image: url("../img/2_about_me/scene.jpg");
   background-size: cover;
   margin: 65px auto 40px;
   opacity: 0;
@@ -117,11 +117,11 @@ div.photo_1, div.photo_2{
   filter: blur(10px);
 }
 div.photo_1{
-  background-image: url(../img/2_about_me/bouquet_1.png);
+  background-image: url(../img/2_about_me/bouquet_1.jpg);
   margin-right: 30px;
 }
 div.photo_2{
-  background-image:url(../img/2_about_me/bouquet_2.png);
+  background-image:url(../img/2_about_me/bouquet_2.jpg);
 }
 p.text_2{
   text-align: center;
