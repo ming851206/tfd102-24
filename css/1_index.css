@@ -17,7 +17,7 @@ header.header{
 div.banner{
   width: 100%;
   height: calc(100vh - 70px);
-  background-image: url(../img/1_home/banner_home.png);
+  background-image: url(../img/1_home/banner_home.jpg);
   background-size: cover;
   background-position: center center;
   position: relative;
