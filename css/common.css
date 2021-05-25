@@ -157,7 +157,7 @@ div.cart_bt:hover{
 @media (max-width: 575.9px){
   a.logo_1{
     left: 15px;
-    width: 110px;
+    width: 100px;
   }
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
@@ -204,31 +204,37 @@ h2.bg_text{
 @media (min-width: 992px) and (max-width: 1199px){
 
 }
-@media (min-width: 768px) and ( max-width: 991px){
+@media (min-width: 768px) and ( max-width: 991.9px){
   div.bg_block{
     width: 570px;
   }
 }
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 576px) and (max-width: 767.9px){
   div.banner{
   height: 419px;
   }
   div.bg_block{
-    width: 400px;
+    width: 380px;
+    height: 160px;
+  }
+  h2.bg_text{
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-indent: 10px;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   div.banner{
   height: 279px;
   }
   div.bg_block{
-    width: 400px;
+    width: 270px;
     height: 110px;
   }
   h2.bg_text{
     font-size: 18px;
-    letter-spacing: 12px;
-    text-indent: 12px;
+    letter-spacing: 8px;
+    text-indent: 8px;
   }
 }
 

@@ -85,6 +85,9 @@ div.contact_info div.icons a{
   margin-top: 20px;
   margin-right: 16px;
 }
+div.contact_info div.icons a:nth-child(3){
+  margin-right: 0;
+}
 div.contact_info div.icons a.fb{
   background-image: url("../img/9_contact_me/fb.svg");
   margin-left: 0;
@@ -121,7 +124,7 @@ div.contact_info div.icons a.mail{
   }
   div.contact_info div.icons{
     display: block;
-    width: 195px;
+    width: 180px;
     margin: 20px auto;
   }
 }
@@ -145,7 +148,7 @@ div.contact_info div.icons a.mail{
   }
   div.contact_info div.icons{
     display: block;
-    width: 195px;
+    width: 180px;
     margin: 20px auto;
   }
 }
@@ -180,7 +183,7 @@ div.contact_info div.icons a.mail{
   }
   div.contact_info div.icons{
     display: block;
-    width: 195px;
+    width: 180px;
     margin: 20px auto;
   }
 }
@@ -278,7 +281,7 @@ button:hover{
   div.contact_table form textarea{
     height: 22px;
     line-height: 22px;
-    width: 180px;
+    width: 172px;
   }
   div.contact_table form textarea{
     vertical-align: middle;
@@ -286,8 +289,8 @@ button:hover{
   button{
     white-space: nowrap;
     text-align: center;
-    letter-spacing: 3px;
-    text-indent: 3px;
+    letter-spacing: 0px;
+    text-indent: 0px;
     padding: 0;
   }
 }
@@ -369,7 +372,7 @@ div.conclusion h2{
     height: 299px;
   }
   div.conclusion h2{
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0px;
     text-indent: 0px;
   }
