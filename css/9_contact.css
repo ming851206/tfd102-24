@@ -290,8 +290,8 @@ button:hover{
   button{
     white-space: nowrap;
     text-align: center;
-    letter-spacing: 2px;
-    text-indent: 2px;
+    letter-spacing: 3px;
+    text-indent: 3px;
     padding: 0;
   }
 }
