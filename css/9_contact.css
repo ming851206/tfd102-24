@@ -35,7 +35,7 @@ div.contact_info .aos-animate img{
   transform: scaleX(1);
   opacity: 1;
   filter: blur(0);
-  transition: all 1.3s ease;
+  transition: all 1.5s ease;
 }
 /* 內文設定與動畫 */
 div.contact_info div.all_info > div{
@@ -54,7 +54,7 @@ div.all_info > div.info.aos-animate{
   transform: scaleX(1);
   opacity: 1;
   filter: blur(0);
-  transition: all 2s ease;
+  transition: all 1.5s ease;
 }
 div.contact_info div.info p,
 div.contact_info div.info a{
@@ -98,9 +98,7 @@ div.contact_info div.icons a.ig{
 div.contact_info div.icons a.mail{
   background-image: url("../img/9_contact_me/mail.svg");
 }
-@media (min-width: 992px) and (max-width: 1199px){
 
-}
 @media (min-width: 768px) and ( max-width: 991px){
   div.contact_info h1{
     margin-bottom: 30px;
@@ -169,6 +167,9 @@ div.contact_info div.icons a.mail{
     height: 90%;
     display: block;
     margin: 0 auto 20px;
+  }
+  div.all_info > div.info.aos-animate{
+    transition: all 0s;
   }
   div.contact_info div.all_info > div{
     width: 100%;
@@ -343,9 +344,7 @@ div.conclusion h2{
   transform: translate(-50%, -50%) scaleY(0);
   transform-origin: 50% 0%;
 }
-@media (min-width: 992px) and (max-width: 1199px){
 
-}
 @media (min-width: 768px) and ( max-width: 991px){
   div.conclusion h2{
     letter-spacing: 4px;

@@ -201,9 +201,6 @@ h2.bg_text{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media (min-width: 992px) and (max-width: 1199px){
-
-}
 @media (min-width: 768px) and ( max-width: 991.9px){
   div.bg_block{
     width: 570px;
@@ -239,13 +236,13 @@ h2.bg_text{
 }
 
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199.9px){
 
 }
-@media (min-width: 768px) and ( max-width: 991px){
+@media (min-width: 768px) and ( max-width: 991.9px){
 
 }
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 576px) and (max-width: 767.9px){
 
 }
 @media (max-width: 575px){

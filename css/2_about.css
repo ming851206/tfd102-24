@@ -11,40 +11,29 @@ div.banner{
 div.about_me{
   width: 100%;
   background-color: rgba(244, 239, 225, .25);
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
-
 div.para{
-  width: 1200px;
+  width: 1120px;
   margin: 40px auto;
   display: block;
 }
 div.para p{
-  display: block;
+  display: block;;
   vertical-align: middle;
   line-height: 2.3;
-  margin-left: 75px;
   text-align: left;
+  /* border: 1px solid red; */
 }
 div.para div.myself{
   display: inline-block;
   float: right;
   width: 400px;
   height: 450px;
-  margin: 20px 75px 18px 65px;
+  margin: 12px 0 18px 65px;
   position: relative;
 }
-div.para div.myself img{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  animation: round 15s linear infinite;
-}
+/* myself輪播 */
 @keyframes round {
   7%{
     opacity: 1;
@@ -59,6 +48,17 @@ div.para div.myself img{
     filter: alpha(opacity=0);
   }
 }
+div.para div.myself img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  animation: round 15s linear infinite;
+}
 div.para div.myself img:nth-child(2) {
   animation-delay: 5s;
 }
@@ -67,6 +67,37 @@ div.para div.myself img:nth-child(3) {
 }
 div.para div.myself:hover img{
   animation-play-state: paused;
+}
+@media (min-width: 992px) and (max-width: 1199.9px){
+  div.para{
+    width: 880px;
+    margin: 40px auto;
+    display: block;
+  }
+  div.para div.myself{
+  margin: 12px 0 18px 30px;
+  }
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.para{
+    width: 700px;
+    margin: 40px auto;
+    display: block;
+  }
+  div.para div.myself{
+    display: block;
+    float: none;
+    margin: 40px auto;
+  }
+  div.para p{
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+
+}
+@media (max-width: 575px){
+
 }
 /* 品牌初衷 */
 h1.about_brand{
