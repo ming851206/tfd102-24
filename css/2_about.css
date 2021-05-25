@@ -78,6 +78,9 @@ div.para div.myself:hover img{
   }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
+  div.about_me{
+    padding-bottom: 30px;
+  }
   div.para{
     width: 700px;
     margin: 40px auto;
@@ -90,36 +93,51 @@ div.para div.myself:hover img{
   }
   div.para p{
     line-height: 1.8;
+    margin: 18px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
+  div.about_me{
+    padding-bottom: 30px;
+  }
   div.para{
     width: 500px;
-    margin: 20px auto;
+    margin: 40px auto;
     display: block;
   }
   div.para div.myself{
     display: block;
     float: none;
-    margin: 40px auto 50px;
+    margin: 0px auto 50px;
   }
   div.para p{
     line-height: 1.8;
-}
+    margin: 18px;
+  }
 }
 @media (max-width: 575px){
+  div.about_me{
+    padding-bottom: 30px;
+  }
   div.para{
-    width: 500px;
+    width: 300px;
     margin: 20px auto;
     display: block;
   }
   div.para div.myself{
+    width: 240px;
+    height: 270px;
     display: block;
     float: none;
     margin: 40px auto 50px;
   }
+  div.para div.myself img{
+
+  }
   div.para p{
-    line-height: 1.8;
-}
+    line-height: 1.5;
+    margin: 18px 12px;
+  }
 }
 /* 品牌初衷 */
 h1.about_brand{
@@ -143,6 +161,40 @@ p.text_1{
   text-align: center;
   margin: 0 auto;
   line-height: 2;
+}
+
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.para_1{
+    width: 595px;
+    height: 432px;
+    margin: 65px auto 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  h1.about_brand{
+    padding-top: 70px;
+  }
+  div.para_1{
+    width: 455px;
+    height: 330px;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 575px){
+  h1.about_brand{
+    padding-top: 70px;
+  }
+  div.para_1{
+    width: 280px;
+    height: 203px;
+    margin: 40px auto 25px;
+  }
+  p.text_1{
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: left;
+    margin: auto 40px;
+  }
 }
 
 div.para_2{
@@ -180,4 +232,46 @@ p.text_2{
   text-align: center;
   margin: 0 auto;
   line-height: 2;
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.para_1{
+    width: 595px;
+    height: 432px;
+    margin: 65px auto 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  h1.about_brand{
+    padding-top: 70px;
+  }
+  div.para_1{
+    width: 455px;
+    height: 330px;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 575px){
+  div.para_2{
+    margin: 50px auto;
+  }
+  div.photo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 0 25px 0;
+  }
+  div.photo_1, div.photo_2{
+    width: 140px;
+    height: 140px;
+    margin: 10px auto;
+  }
+  div.photo_1{
+    margin-right: 0px;
+  }
+  p.text_2{
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: left;
+    margin: auto 32px;
+  }
 }
