@@ -276,12 +276,12 @@ button:hover{
   div.contact_table form input,
   div.contact_table form textarea{
     height: 22px;
-    line-height: 10px;
+    line-height: 22px;
     width: 180px;
   }
-  div.contact_table form textarea{
+  /* div.contact_table form textarea{
     vertical-align: middle;
-  }
+  } */
   /* button{
     white-space: nowrap;
     letter-spacing: 5px;
