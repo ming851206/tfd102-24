@@ -233,21 +233,17 @@ p.text_2{
   margin: 0 auto;
   line-height: 2;
 }
-@media (min-width: 768px) and ( max-width: 991.9px){
-  div.para_1{
-    width: 595px;
-    height: 432px;
-    margin: 65px auto 40px;
-  }
-}
 @media (min-width: 576px) and (max-width: 767.9px){
-  h1.about_brand{
-    padding-top: 70px;
+  div.photo_1, div.photo_2{
+    width: 260px;
+    height: 260px;
+    margin: 10px auto;
   }
-  div.para_1{
-    width: 455px;
-    height: 330px;
-    margin: 40px auto;
+  div.photo_1{
+    margin-right: 0px;
+  }
+  div.photo_2{
+    margin-left: 12px;
   }
 }
 @media (max-width: 575px){
@@ -255,18 +251,18 @@ p.text_2{
     margin: 50px auto;
   }
   div.photo_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 65px 0 25px 0;
+    margin: 25px 0 25px 0;
   }
   div.photo_1, div.photo_2{
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     margin: 10px auto;
   }
   div.photo_1{
     margin-right: 0px;
+  }
+  div.photo_2{
+    margin-left: 5px;
   }
   p.text_2{
     line-height: 1.6;
