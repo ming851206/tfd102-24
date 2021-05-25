@@ -117,6 +117,7 @@ div.contact_info div.icons a.mail{
     margin-top: 80px;
     display: block;
     margin: 0 auto;
+    padding-left: 20px;
   }
   div.contact_info div.icons{
     display: block;
@@ -140,6 +141,7 @@ div.contact_info div.icons a.mail{
     margin-top: 60px;
     display: block;
     margin: 0 auto;
+    padding-left: 20px;
   }
   div.contact_info div.icons{
     display: block;
@@ -286,6 +288,7 @@ button:hover{
     text-align: center;
     letter-spacing: 5px;
     text-indent: 5px;
+    padding: 0;
   }
 }
 
