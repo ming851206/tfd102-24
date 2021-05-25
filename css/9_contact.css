@@ -286,8 +286,8 @@ button:hover{
   button{
     white-space: nowrap;
     text-align: center;
-    letter-spacing: 5px;
-    text-indent: 5px;
+    letter-spacing: 3px;
+    text-indent: 3px;
     padding: 0;
   }
 }
