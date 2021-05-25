@@ -23,7 +23,6 @@ div.para p{
   vertical-align: middle;
   line-height: 2.3;
   text-align: left;
-  /* border: 1px solid red; */
 }
 div.para div.myself{
   display: inline-block;
@@ -87,17 +86,40 @@ div.para div.myself:hover img{
   div.para div.myself{
     display: block;
     float: none;
-    margin: 40px auto;
+    margin: 40px auto 50px;
   }
   div.para p{
-    display: block;
-  }
+    line-height: 1.8;
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-
+  div.para{
+    width: 500px;
+    margin: 20px auto;
+    display: block;
+  }
+  div.para div.myself{
+    display: block;
+    float: none;
+    margin: 40px auto 50px;
+  }
+  div.para p{
+    line-height: 1.8;
+}
 }
 @media (max-width: 575px){
-
+  div.para{
+    width: 500px;
+    margin: 20px auto;
+    display: block;
+  }
+  div.para div.myself{
+    display: block;
+    float: none;
+    margin: 40px auto 50px;
+  }
+  div.para p{
+    line-height: 1.8;
+}
 }
 /* 品牌初衷 */
 h1.about_brand{

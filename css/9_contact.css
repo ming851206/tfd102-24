@@ -290,15 +290,15 @@ button:hover{
   button{
     white-space: nowrap;
     text-align: center;
-    letter-spacing: 0px;
-    text-indent: 0px;
+    letter-spacing: 1px;
+    text-indent: 1px;
     padding: 0;
   }
 }
 
 /* 結語 */
 section{
-  height: 700px;
+  height: 800px;
   position: relative;
 }
 div.conclusion{
