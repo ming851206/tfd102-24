@@ -10,7 +10,7 @@ body{
 /* header */
 header.header{
   background: #F4F0ED;
-  width: 100%;
+  max-width: 100%;
   height: 70px;
   margin: 0 auto;
   position: sticky;
@@ -25,10 +25,10 @@ a.logo_1{
   top: 48%;
   transform: translateY(-40%);
   left: 40px;
+  width: 150px;
 }
 a.logo_1 > img.logo_1{
-  width: 50%;
-  height: 50%;
+  width: 100%;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .1));
 }
 nav.nav{
@@ -54,7 +54,7 @@ ul.nav_list > li > a{
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding: 20px;
+  padding: 20px 20px;
   margin-right: 25px;
   height: 100%;
   white-space: nowrap;
@@ -67,7 +67,7 @@ ul.nav_list > li > div.order_flower{
   font-size: 18px;
   display: inline-block;
   height: 100%;
-  padding: 20px;
+  padding: 20px 20px;
   margin-right: 25px;
   text-align: center;
   vertical-align: middle;
@@ -132,9 +132,41 @@ div.cart_bt:hover{
   cursor: pointer;
   filter: invert(15%);
 }
+@media (min-width: 992px) and (max-width: 1199px){
+  ul.nav_list > li > a,
+  ul.nav_list > li > div.order_flower{
+    margin-right: 15px;
+    padding: 20px 15px;
+  }
+}
+@media (min-width: 768px) and ( max-width: 991px){
+  ul.nav_list > li > a,
+  ul.nav_list > li > div.order_flower{
+    display: none;
+  }
+  nav.nav > div{
+    margin-left: 25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  ul.nav_list > li > a,
+  ul.nav_list > li > div.order_flower{
+    display: none;
+  }
+}
+@media (max-width: 575px){
+  a.logo_1{
+    left: 15px;
+  }
+  ul.nav_list > li > a,
+  ul.nav_list > li > div.order_flower{
+    display: none;
+  }
+}
+
 /* banner */
 div.banner{
-  width: 100%;
+  max-width: 100%;
   height: 558px;
   background-size: cover;
   background-position: center center;
@@ -167,6 +199,47 @@ h2.bg_text{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+@media (min-width: 768px) and ( max-width: 991px){
+  div.bg_block{
+    width: 570px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  div.bg_block{
+    width: 490px;
+  }
+}
+@media (max-width: 575px){
+  div.banner{
+  height: 279px;
+  }
+  div.bg_block{
+    width: 400px;
+    height: 110px;
+  }
+  h2.bg_text{
+    font-size: 18px;
+    letter-spacing: 12px;
+    text-indent: 12px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+@media (min-width: 768px) and ( max-width: 991px){
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+@media (max-width: 575px){
+
 }
 /* 內文 */
 h1{
@@ -202,7 +275,7 @@ p{
 }
 /* footer */
 footer{
-  width: 100%;
+  max-width: 100%;
   background-color: #F4F0ED;
 }
 
@@ -238,4 +311,23 @@ footer p{
   letter-spacing: 5px;
   padding-bottom: 40px;
   margin: 25px auto 0;
+  white-space: nowrap;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+@media ( min-width: 768px) and ( max-width: 991px){
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+@media (max-width: 575px){
+  footer{
+    width: 100%;
+  }
+  footer p{
+  font-size: 16px;
+  letter-spacing: 1px;
+  }
 }
