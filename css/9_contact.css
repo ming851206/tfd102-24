@@ -228,7 +228,7 @@ div.contact_table form textarea{
 div.contact_table form textarea{
   resize: none;
   overflow: hidden;
-  vertical-align: sub;
+  /* vertical-align: sub; */
 }
 div.contact_table form input:focus,
 div.contact_table form textarea:focus{
@@ -279,9 +279,9 @@ button:hover{
     line-height: 22px;
     width: 180px;
   }
-  /* div.contact_table form textarea{
+  div.contact_table form textarea{
     vertical-align: middle;
-  } */
+  }
   /* button{
     white-space: nowrap;
     letter-spacing: 5px;
