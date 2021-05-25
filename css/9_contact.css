@@ -279,11 +279,14 @@ button:hover{
     line-height: 10px;
     width: 180px;
   }
-  button{
+  div.contact_table form textarea{
+    vertical-align: middle;
+  }
+  /* button{
     white-space: nowrap;
     letter-spacing: 5px;
     text-indent: 5px;
-  }
+  } */
 }
 
 /* 結語 */
