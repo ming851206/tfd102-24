@@ -99,7 +99,7 @@ div.contact_info div.icons a.mail{
   background-image: url("../img/9_contact_me/mail.svg");
 }
 
-@media (min-width: 768px) and ( max-width: 991px){
+@media (min-width: 768px) and ( max-width: 991.9px){
   div.contact_info h1{
     margin-bottom: 30px;
   }
@@ -126,7 +126,7 @@ div.contact_info div.icons a.mail{
     margin: 20px auto;
   }
 }
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 576px) and (max-width: 767.9px){
   div.contact_info h1{
     margin-bottom: 30px;
   }
@@ -151,7 +151,7 @@ div.contact_info div.icons a.mail{
   }
 }
 
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   div.contact_info {
     margin-bottom: 60px;
   }
@@ -169,7 +169,7 @@ div.contact_info div.icons a.mail{
     margin: 0 auto 20px;
   }
   div.all_info > div.info.aos-animate{
-    transition: all 0s;
+    transition: initial;
   }
   div.contact_info div.all_info > div{
     width: 100%;
@@ -262,16 +262,12 @@ button:hover{
   background-color: #9D7C62;
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-
+@media (min-width: 576px) and (max-width: 767.9px){
+  div.contact_table{
+    background-image: none;
+  }
 }
-@media (min-width: 768px) and ( max-width: 991px){
-
-}
-@media (min-width: 576px) and (max-width: 767px){
-
-}
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   div.contact_table{
     background-image: none;
   }
@@ -345,13 +341,13 @@ div.conclusion h2{
   transform-origin: 50% 0%;
 }
 
-@media (min-width: 768px) and ( max-width: 991px){
+@media (min-width: 768px) and ( max-width: 991.9px){
   div.conclusion h2{
     letter-spacing: 4px;
     text-indent: 4px;
   }
 }
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 576px) and (max-width: 767.9px){
   div.conclusion{
     width: 400px;
     height: 427px;
@@ -362,7 +358,7 @@ div.conclusion h2{
     text-indent: 2px;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   section{
     height: 440px;
   }

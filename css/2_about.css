@@ -115,7 +115,7 @@ div.para div.myself:hover img{
     margin: 18px;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   div.about_me{
     padding-bottom: 30px;
   }
@@ -180,7 +180,7 @@ p.text_1{
     margin: 40px auto;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   h1.about_brand{
     padding-top: 70px;
   }
@@ -246,7 +246,7 @@ p.text_2{
     margin-left: 12px;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575.9px){
   div.para_2{
     margin: 50px auto;
   }

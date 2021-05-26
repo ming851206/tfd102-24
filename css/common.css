@@ -132,14 +132,14 @@ div.cart_bt:hover{
   cursor: pointer;
   filter: invert(15%);
 }
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199.9px){
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
     margin-right: 15px;
     padding: 20px 15px;
   }
 }
-@media (min-width: 768px) and ( max-width: 991px){
+@media (min-width: 768px) and ( max-width: 991.9px){
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
     display: none;
