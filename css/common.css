@@ -259,7 +259,7 @@ ul.flower_list_mobile li:last-child a{
 }
 @media (min-width: 576px) and (max-width: 767.9px){
   nav.nav{
-    right: 20px;
+    right: 25px;
   }
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
@@ -268,7 +268,7 @@ ul.flower_list_mobile li:last-child a{
 }
 @media (max-width: 575.9px){
   nav.nav{
-    right: 12px;
+    right: 25px;
   }
   a.logo_1{
     left: 15px;
