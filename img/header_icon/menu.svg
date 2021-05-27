@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="menu_icon" data-name="menu icon" transform="translate(-64 0.397)">
+    <circle id="icon_bg" data-name="icon bg" cx="21" cy="21" r="21" transform="translate(64 -0.397)" fill="#fff" opacity="0.8"/>
+    <g id="Icon_ionic-ios-menu" data-name="Icon ionic-ios-menu" transform="translate(70.5 3.875)">
+      <path id="Path_30" data-name="Path 30" d="M23.667,12.375H5.333c-.458,0-.833-.506-.833-1.125h0c0-.619.375-1.125.833-1.125H23.667c.458,0,.833.506.833,1.125h0C24.5,11.869,24.125,12.375,23.667,12.375Z" transform="translate(0)" fill="#9c7c62"/>
+      <path id="Path_31" data-name="Path 31" d="M23.667,19.125H5.333c-.458,0-.833-.506-.833-1.125h0c0-.619.375-1.125.833-1.125H23.667c.458,0,.833.506.833,1.125h0C24.5,18.619,24.125,19.125,23.667,19.125Z" transform="translate(0)" fill="#9c7c62"/>
+      <path id="Path_32" data-name="Path 32" d="M23.667,25.875H5.333c-.458,0-.833-.506-.833-1.125h0c0-.619.375-1.125.833-1.125H23.667c.458,0,.833.506.833,1.125h0C24.5,25.369,24.125,25.875,23.667,25.875Z" transform="translate(0)" fill="#9c7c62"/>
+    </g>
+  </g>
+</svg>

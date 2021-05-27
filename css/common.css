@@ -7,6 +7,7 @@ body{
   font-size: 18px;
   color: #A8A393;
 }
+/* 桌機版 */
 /* header */
 header.header{
   background: #F4F0ED;
@@ -59,9 +60,6 @@ ul.nav_list > li > a{
   height: 100%;
   white-space: nowrap;
 }
-ul.nav_list > li > a:hover{
-  color: #B2B2B2;
-}
 ul.nav_list > li > div.order_flower{
   color: #9C7C62;
   font-size: 18px;
@@ -74,6 +72,7 @@ ul.nav_list > li > div.order_flower{
   position: relative;
   white-space: nowrap;
 }
+ul.nav_list > li > a:hover,
 ul.nav_list > li > div.order_flower:hover{
   color: #B2B2B2;
 }
@@ -109,7 +108,9 @@ ul.nav_list > li > div.order_flower > ul.order_flower_list > li > a{
 ul.nav_list > li > div.order_flower > ul.order_flower_list > li:hover > a{
   color:  #B2B2B2;
 }
-nav.nav > div{
+div.member_bt,
+div.cart_bt,
+div.menu_bt{
   width: 35px;
   height: 35px;
   background-size: contain;
@@ -121,16 +122,118 @@ nav.nav > div{
 div.member_bt{
   background-image: url(../img/header_icon/member_bt.svg);
 }
-div.member_bt:hover{
-  cursor: pointer;
-  filter: invert(15%);
-}
 div.cart_bt{
   background-image: url(../img/header_icon/cart_bt.svg);
 }
-div.cart_bt:hover{
+div.menu_bt{
+  background-image: url(../img/header_icon/menu.svg);
+}
+div.member_bt:hover,
+div.cart_bt:hover,
+div.menu_bt:hover{
   cursor: pointer;
   filter: invert(15%);
+}
+
+/* 手機版 */
+/* 遮罩 */
+div.mask{
+  display: none;
+  height: 100vh;
+  width: calc(100% - 210px);
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .65);
+}
+/* 右方導覽列 */
+div.mobile_navbar{
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 210px;
+  height: 100vh;
+  background-color: white;
+}
+ul.nav_list_mobile{
+  display: block;
+}
+ul.nav_list_mobile{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.nav_list_mobile > li{
+  border-bottom: 3px solid #F4F0ED;
+
+}
+ul.nav_list_mobile > li a{
+  text-decoration: none;
+  color: #9C7C62;
+  display: block;
+  padding: 15px 30px;
+}
+ul.nav_list_mobile > li a:hover{
+  color: #B2B2B2;
+}
+div.order_flower_mobile{
+  color: #9C7C62;
+  padding: 15px 0 0 0;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  position: relative;
+}
+div.order_flower_mobile:after{
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 10px;
+  background-image: url("../img/4_course_page/custom.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 27px;
+  right: 85px;
+}
+div.order_flower_mobile:hover{
+  cursor: pointer;
+  color: #B2B2B2;
+}
+ul.flower_list_mobile{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+ul.flower_list_mobile li{
+  position: relative;
+}
+ul.flower_list_mobile li a{
+  display: block;
+  padding: 15px 20px;
+  color: #B2B2B2;
+}
+ul.flower_list_mobile li a:hover{
+  color: #9C7C62;
+}
+ul.flower_list_mobile li a::before{
+  content: "";
+  border-bottom: 3px solid #F4F0ED;
+  position: absolute;
+  width: 210px;
+  top: 0;
+  left: -15px;
+}
+ul.flower_list_mobile li:first-child a{
+  margin-top: 15px;
+}
+ul.flower_list_mobile li:last-child a{
+  padding-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+  div.menu_bt{
+    display: none;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199.9px){
   ul.nav_list > li > a,
@@ -138,8 +241,14 @@ div.cart_bt:hover{
     margin-right: 15px;
     padding: 20px 15px;
   }
+  div.menu_bt{
+    display: none;
+  }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
+  nav.nav{
+    right: 25px;
+  }
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
     display: none;
@@ -149,12 +258,18 @@ div.cart_bt:hover{
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
+  nav.nav{
+    right: 20px;
+  }
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
     display: none;
   }
 }
 @media (max-width: 575.9px){
+  nav.nav{
+    right: 12px;
+  }
   a.logo_1{
     left: 15px;
     width: 100px;
@@ -285,7 +400,6 @@ footer{
   max-width: 100%;
   background-color: #F4F0ED;
 }
-
 div.icons{
   display: flex;
   justify-content: center;
@@ -319,15 +433,6 @@ footer p{
   padding-bottom: 40px;
   margin: 25px auto 0;
   white-space: nowrap;
-}
-@media (min-width: 992px) and (max-width: 1199px){
-
-}
-@media ( min-width: 768px) and ( max-width: 991px){
-
-}
-@media (min-width: 576px) and (max-width: 767px){
-
 }
 @media (max-width: 575px){
   footer{

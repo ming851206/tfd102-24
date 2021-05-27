@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="close_icon" data-name="close icon" transform="translate(-64 0.397)">
+    <circle id="icon_bg" data-name="icon bg" cx="21" cy="21" r="21" transform="translate(64 -0.397)" fill="#fff" opacity="0.8"/>
+    <path id="Icon_material-close" data-name="Icon material-close" d="M24.5,9.212,22.788,7.5,16,14.288,9.212,7.5,7.5,9.212,14.288,16,7.5,22.788,9.212,24.5,16,17.712,22.788,24.5,24.5,22.788,17.712,16Z" transform="translate(69 4.603)" fill="#9c7c62"/>
+  </g>
+</svg>
