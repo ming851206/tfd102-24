@@ -192,7 +192,7 @@ div.order_flower_mobile:after{
   background-repeat: no-repeat;
   background-size: contain;
   top: 27px;
-  right: 85px;
+  left: 85px;
 }
 div.order_flower_mobile:hover{
   cursor: pointer;
@@ -277,6 +277,9 @@ ul.flower_list_mobile li:last-child a{
   ul.nav_list > li > a,
   ul.nav_list > li > div.order_flower{
     display: none;
+  }
+  div.mobile_navbar{
+    overflow-y: scroll;
   }
 }
 
