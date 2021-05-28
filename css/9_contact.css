@@ -137,6 +137,20 @@ div.contact_info div.icons a.mail{
   div.contact_info img{
     display: block;
     margin: 0 auto;
+    transform: scaleX(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  div.contact_info .aos-animate img{
+    transition: none;
+  }
+  div.all_info > div.info{
+    transform: scaleX(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  div.all_info > div.info.aos-animate{
+    transition: none;
   }
   div.contact_info div.all_info > div{
     margin-top: 60px;
@@ -167,9 +181,20 @@ div.contact_info div.icons a.mail{
     height: 90%;
     display: block;
     margin: 0 auto 20px;
+    transform: scaleX(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  div.contact_info .aos-animate img{
+    transition: none;
+  }
+  div.all_info > div.info{
+    transform: scaleX(1);
+    opacity: 1;
+    filter: blur(0px);
   }
   div.all_info > div.info.aos-animate{
-    transition: initial;
+    transition: none;
   }
   div.contact_info div.all_info > div{
     width: 100%;
