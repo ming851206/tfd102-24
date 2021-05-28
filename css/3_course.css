@@ -88,11 +88,16 @@ div.course_theme h2{
   padding: 0;
   letter-spacing: 5px;
   text-indent: 5px;
+  
+  -webkit-text-decoration: 1px #9D7C62 underline;
+  -moz-text-decoration: 1px #9D7C62 underline;
+  -o-text-decoration: 1px #9D7C62 underline;
   text-decoration: 1px #9D7C62 underline;
+
   -webkit-text-underline-offset: 8px;
   -moz-text-underline-offset: 8px;
   -o-text-underline-offset: 8px;
-
+  text-underline-offset: 8px;
 }
 div.course_theme p{
   letter-spacing: 1px;
