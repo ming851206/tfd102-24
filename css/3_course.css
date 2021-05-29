@@ -93,10 +93,10 @@ div.course_theme h2{
 div.course_theme h2:after{
   content: "";
   width: 345px;
-  border: 1px solid rgba(157, 124, 98, .75);
+  border-top: 1px solid #9D7C62;
   position: absolute;
-  bottom: -8%;
-  left: 138px;
+  bottom: -4px;
+  left: 230px;
 }
 div.course_theme p{
   letter-spacing: 1px;
