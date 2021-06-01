@@ -22,6 +22,6 @@ $(function(){
   $("div.mask").on("click", function(){
     $(this).fadeToggle();
     $("div.mobile_navbar").fadeToggle();
-    $("div.menu_bt").css("backgroundImage", "url(../img/header_icon/menu.svg)");
+    // $("div.menu_bt").css("backgroundImage", "url(../img/header_icon/menu.svg)");
   });
 });
