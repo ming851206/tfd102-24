@@ -1,13 +1,3 @@
-// let menu_br_bt = document.getElementsByClassName("menu_br_bt");
-//
-// menu_br_bt.addEventListener("click", function(){
-//   let mask = document.getElementsByClassName("mask");
-//    mask.add();
-//
-//   let mobile_navbar = document.getElementsByClassName("mobile_navbar");
-//   mobile_navbar.add();
-// });
-
 // 偵測作業系統
 if (navigator.appVersion.indexOf("Win")!=-1){
   $("bg_block").css('transform','translate(-48%, -48%)');
