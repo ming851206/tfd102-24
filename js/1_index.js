@@ -13,4 +13,4 @@ window.onload = function () {
 let preload = src => {
     let img = new Image();
     img.src = src;
-}
+};

@@ -139,7 +139,7 @@ div.brand_introduction h1{
 }
 
 /* 輪播 */
-div.slider_container{
+/* div.slider_container{
   width: 650px;
   height: 625px;
   margin: 52px auto 20px;
@@ -190,7 +190,7 @@ div.slider_container img:nth-child(5) {
 }
 div.slider_container:hover img {
   animation-play-state: paused;
-}
+} */
 div.brand_introduction p{
   letter-spacing: 10px;
   text-indent: 10px;
