@@ -185,6 +185,7 @@ button:hover{
   }
   div.img_group > img{
     width: 30%;
+    height: 30%;
   }
   div.content{
     padding-right: 20px;
