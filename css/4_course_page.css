@@ -374,6 +374,9 @@ section > div a p{
   section > div a div h2{
     line-height: 2;
   }
+  section > div a h2{
+    margin: 10px auto 5px;
+  }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
   section{
@@ -391,6 +394,7 @@ section > div a p{
   }
   section > div a h2{
     font-size: 22px;
+    margin: 10px auto 5px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
@@ -437,5 +441,5 @@ section > div a p{
   }
   section > div a h2{
     font-size: 22px;
+    margin: 10px auto 5px;
   }
-}
