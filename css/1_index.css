@@ -139,6 +139,40 @@ div.brand_introduction h1{
 }
 
 /* 輪播 */
+#slider{
+  margin: 52px auto 20px;
+  position: relative;
+  border: 1px solid red;
+}
+
+#imgs{
+  border: 1px solid blue;
+}
+#imgs .-on{
+  display: inline;
+}
+#dots{
+  /* width: 300px; */
+  width: 135px;
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+#dots span{
+  border: 2px solid #F4F0ED;
+  border-radius: 50%;
+  /* width: 40px; */
+  height: 15px;
+  width: 15px;
+  background-color: #F4F0ED;
+}
+#dots .-on{
+  background-color: #9C7C62;
+}
+
 /* div.slider_container{
   width: 650px;
   height: 625px;
@@ -195,6 +229,7 @@ div.brand_introduction p{
   letter-spacing: 10px;
   text-indent: 10px;
   line-height: 4;
+  margin-top: 60px;
 }
 
 /* 花藝課程 */
