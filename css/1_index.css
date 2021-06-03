@@ -96,7 +96,7 @@ h2.bg_text{
     opacity: 0;
   }
   100%{
-    opacity: .65;
+    opacity: .8;
   }
 }
 div.scroll_arrow{
@@ -111,10 +111,85 @@ div.scroll_arrow{
   transform: translate(-50%, -50%);
   filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
   z-index: 1;
-  opacity: .65;
+  opacity: .8;
   animation: fade-in_2 0.5s ease 3.8s both,
             scroll 2s linear infinite both,
             shadow 2s linear infinite both;
+}
+@media (min-width: 992px) and (max-width: 1199.9px){
+  div.bg_block{
+    width: 430px;
+    height: 210px;;
+  }
+  h2.bg_text{
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.bg_block{
+    width: 420px;
+    height: 200px;;
+  }
+  h2.bg_text{
+    font-size: 26px;
+  }
+  div.scroll_arrow{
+    transform: translate(-25%, -50%);
+  }
+  @keyframes scroll {
+    50%{
+      transform: translate(-25%, -25%);
+    }
+    100%{
+      transform: translate(-25%, -50%);
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  div.bg_block{
+    width: 350px;
+    height: 150px;
+  }
+  h2.bg_text{
+    font-size: 24px;
+    transform: translate(-10%, -50%);
+  }
+  div.scroll_arrow{
+    transform: translate(-10%, -50%);
+  }
+  @keyframes scroll {
+    50%{
+      transform: translate(-10%, -25%);
+    }
+    100%{
+      transform: translate(-10%, -50%);
+    }
+  }
+}
+@media (max-width: 575.9px){
+  div.banner{
+    background-image: url(../img/1_home/mobile_bg.jpg);
+  }
+  div.bg_block{
+    width: 200px;
+    height: 90px;
+  }
+  h2.bg_text{
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-indent: 6px;
+  }
+  div.scroll_arrow{
+    transform: translate(0%, -50%);
+  }
+  @keyframes scroll {
+    50%{
+      transform: translate(0%, -25%);
+    }
+    100%{
+      transform: translate(0%, -50%);
+    }
+  }
 }
 
 div.parent_container{
@@ -124,7 +199,8 @@ div.parent_container{
 /* 簡介 */
 div.brand_introduction{
   margin: 150px auto;
-  width: 1200px
+  width: 992px;
+  border: 1px solid red;
 }
 div.brand_introduction img{
   display: inline-block;
@@ -498,12 +574,14 @@ div.blog_container > h1{
 }
 
 div.blog_container div.blog_group{
+  width: 1120px;
+  margin: 0 auto;;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
 }
 div.blog_container div.blog_group div{
-  width: 362px;
+  width: 33%;
   height: 662px;
   display: inline-block;
   background-color: white;
@@ -539,9 +617,9 @@ div.blog_container div.blog_group div a{
   display: inline-block;
   text-decoration: none;
 }
-div.blog_container div.blog_group div.flower_notes{
+/* div.blog_container div.blog_group div.flower_notes{
   margin: auto 40px;
-}
+} */
 div.blog_container div.blog_group div a img{
   width: 362px;
   height: 280px;
@@ -588,6 +666,18 @@ div.blog_container div.blog_group div a span.more{
   text-align: right;
   margin: 40px 30px;
 }
+@media (min-width: 992px) and (max-width: 1199.9px){
+
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+
+}
+@media (max-width: 575.9px){
+
+}
 
 /* 結語 */
 section{
@@ -633,4 +723,36 @@ div.conclusion h2{
   left: 50%;
   transform: translate(-50%, -50%) scaleY(0);
   transform-origin: 50% 0%;
+}
+
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.conclusion h2{
+    letter-spacing: 6px;
+    text-indent: 6px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  div.conclusion{
+    width: 400px;
+    height: 427px;
+  }
+  div.conclusion h2{
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-indent: 3px;
+  }
+}
+@media (max-width: 575.9px){
+  section{
+    padding: 75px 0;
+  }
+  div.conclusion{
+    width: 280px;
+    height: 299px;
+  }
+  div.conclusion h2{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+  }
 }
