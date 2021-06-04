@@ -421,6 +421,9 @@ button.more_courses:hover{
     width: 747px;
     height: 286px;
   }
+  div.course_2{
+    margin: 60px 0;
+  }
   div.content_1 {
     transform: translate(112%, -45%);
   }
@@ -430,6 +433,12 @@ button.more_courses:hover{
   div.content_1 h2,
   div.content_2 h2{
     margin: 30px 0 14px 0;
+  }
+  button.more_courses{
+    bottom: -10%;
+  }
+  button.more_courses:hover{
+    bottom: -10%;
   }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
@@ -452,7 +461,7 @@ button.more_courses:hover{
     height: 254px;
   }
   div.course_2{
-    margin: 70px 0;
+    margin: 60px 0;
   }
   div.content_1 {
     transform: translate(112%, -48%);
@@ -843,7 +852,7 @@ button.more_product:hover{
     margin: 60px auto 0;
   }
   div.product_container p.description{
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
   div.fresh_flower{
     width: 580px;
@@ -855,9 +864,10 @@ button.more_product:hover{
     margin-right: 45px;
   }
   div.wedding_flower{
-    width: 610px;
-    height: 460px;
-    padding: 25px 300px 40px 40px;
+    width: 620px;
+    height: 480px;
+    padding: 25px 280px 40px 60px;
+      transform: translateY(-32%);
   }
   a.fresh_flower h2,
   a.dried_flower h2,
@@ -873,7 +883,7 @@ button.more_product:hover{
     width: 155px;
     letter-spacing: 8px;
     text-indent: 8px;
-    bottom: -9%;
+    bottom: -8.2%;
     right: 7.5%;
   }
 }
