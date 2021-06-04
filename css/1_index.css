@@ -568,9 +568,6 @@ button.more_product:hover{
     height: 518px;
     margin-right: 0px;
   }
-  a.dried_flower{
-    transform: translateY(-20%);
-  }
   div.wedding_flower{
     width: 780px;
     padding: 50px 300px 85px 60px;
@@ -592,49 +589,33 @@ button.more_product:hover{
     line-height: 76px;
   }
   button.more_product{
-    bottom: -5.8%;
+    bottom: -5.5%;
     right: 10%;
   }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
   div.product_container{
-    width: 708px;
+    width: 748px;
     height: 1420px;
     margin: 60px auto 0;
   }
   div.product_container p.description{
     margin-bottom: 55px;
   }
-  /* 鮮花花禮 */
   div.fresh_flower{
     width: 580px;
     padding: 24px 47px 24px 90px;
   }
-  /* 乾燥花禮 */
   div.dried_flower{
-    width: 290px;
-    height: 340px;
-    margin-left: auto;
+    width: 300px;
+    height: 350px;
     margin-right: 45px;
   }
-  a.dried_flower{
-    transform: translateY(-20%);
-  }
-  /* 婚禮花藝 */
   div.wedding_flower{
     width: 610px;
     height: 460px;
-    padding: 29px 311px 60px 43px;
-    margin-left: auto;
-    transform: translateY(-30%);
+    padding: 25px 300px 40px 40px;
   }
-  a.fresh_flower,
-  a.dried_flower,
-  a.wedding_flower{
-    width: 100%;
-    height: 100%;
-  }
-  /* 文字框設定 */
   a.fresh_flower h2,
   a.dried_flower h2,
   a.wedding_flower h2{
@@ -644,26 +625,207 @@ button.more_product:hover{
     width: 175px;
     height: 76px;
     line-height: 76px;
-    top: 50%;
-    transform: translate(0, -50%);
   }
-  /* 了解更多按鈕 */
   button.more_product{
     width: 155px;
-    height: 60px;
-    font-size: 18px;
     letter-spacing: 8px;
     text-indent: 8px;
-    bottom: -8.8%;
+    bottom: -9%;
     right: 7.5%;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-
+  div.product_container{
+    width: 556px;
+    height: 1480px;
+    margin: 0 auto;
+  }
+  div.product_container p.description{
+    margin-bottom: 30px;
+  }
+  div.fresh_flower{
+    width: 430px;
+    padding: 10px 20px 8px 20px;
+    background-color: white;
+  }
+  div.dried_flower{
+    width: 280px;
+    height: 335px;
+    margin-right: 0;
+  }
+  a.dried_flower{
+    transform: translateY(0);
+  }
+  div.wedding_flower{
+    background-color: white;
+    width: 520px;
+    height: 350px;
+    padding: 10px 230px 0px 30px;
+    transform: translateY(-2%);
+  }
+  a.fresh_flower:hover img,
+  a.dried_flower:hover img,
+  a.wedding_flower:hover img{
+    transform: none;
+  }
+  a.fresh_flower h2,
+  a.dried_flower h2,
+  a.wedding_flower h2{
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    width: 140px;
+    height: 66px;
+    line-height: 66px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    transition: none;
+  }
+  a.dried_flower h2{
+    transform: translate(-100%, -65%);
+  }
+  a.dried_flower:hover h2{
+    transform: translate(-100%, -65%);
+  }
+  /* 了解更多按鈕 */
+  button.more_product{
+    width: 148px;
+    height: 56px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-indent: 6px;
+    bottom: 8.5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  button.more_product:hover{
+    transform: translateX(50%);
+    box-shadow: none;
+  }
 }
 @media (max-width: 575.9px){
+  div.product_container p.description{
+    letter-spacing: 4px;
+    text-indent: 4px;
+    margin-bottom: 36px;
+  }
+  div.product_container{
+    width: 350px;
+    height: 1500px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+  div.product_container p.description{
+    margin-bottom: 30px;
+  }
+  div.fresh_flower{
+    width: 350px;
+    padding: 0;
+    background-color: white;
+    margin-bottom: 30px;
+    font-size: 0;
+  }
+  a.fresh_flower h2,
+  a.dried_flower h2,
+  a.wedding_flower h2{
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    width: 130px;
+    height: 48px;
+    line-height: 48px;
+    top: 100%;
+    right: 0;
+    transition: none;
+    border-radius: 0;
+    z-index: 1;
+  }
+  a.fresh_flower h2{
+    transform: translate(1% ,-136%);
+  }
+  a.fresh_flower:hover h2{
+    transform: translate(1% ,-136%);
+  }
+  /* 乾燥花禮 */
+  div.dried_flower{
+    width: 290px;
+    height: 330px;
+    margin: 30px auto;
+    padding: 0;
+    font-size: 0;
+  }
+  a.dried_flower{
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+  }
+  a.dried_flower h2{
+    right: 100%;
+    transform: translate(0 ,-136%);
+    z-index: 6;
+  }
+  a.dried_flower:hover h2{
+    right: 100%;
+    transform: translate(0 ,-136%);
+  }
+  /* 婚禮花藝 */
+  div.wedding_flower{
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 290px;
+    height: 360px;
+    padding: 0;
+    margin: 30px auto;
+    font-size: 0;
+    transform: translateY(0%);
+  }
+  a.wedding_flower h2{
+    right: 0;
+    transform: translate(1% ,-136%);
+    z-index: 2;
+  }
+  a.wedding_flower:hover h2{
+    right: 0;
+    transform: translate(1% ,-136%);
+  }
+  a.fresh_flower:hover img,
+  a.dried_flower:hover img,
+  a.wedding_flower:hover img{
+    transform: none;
+    box-shadow: none;
+  }
+  /* 文字框設定 */
+  /* a.fresh_flower h2,
+  a.dried_flower h2,
+  a.wedding_flower h2{
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    width: 140px;
+    height: 66px;
+    line-height: 66px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    transition: none;
+  } */
 
+  /* 了解更多按鈕 */
+  button.more_product{
+    width: 148px;
+    height: 56px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-indent: 6px;
+    bottom: 8.5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  button.more_product:hover{
+    transform: translateX(50%);
+    box-shadow: none;
+  }
 }
+
 
 
 /* blog */
