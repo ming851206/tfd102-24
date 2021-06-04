@@ -314,7 +314,7 @@ div.course_container{
   margin: 0 auto;
   padding-bottom: 130px;
 }
-div.course_container h1{
+div.course_container > h1{
   padding-top: 110px;
   margin-bottom: 24px;
 }
@@ -343,28 +343,29 @@ div.course_1:hover,
 div.course_2:hover{
   transform: scale(1.1);
 }
+div.course_1 img,
+div.course_2 img{
+  width: 50%;
+  height: 100%;
+}
 div.course_1 img{
-  width: 416px;
-  height: 318px;
   float: left;
 }
 div.course_2 img{
-  width: 416px;
-  height: 318px;
   float: right;
 }
 div.content_1 {
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(120%, -42%);
+  transform: translate(120%, -45%);
 }
 div.content_2 {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-128%, -40%);
+  transform: translate(-128%, -48%);
 }
 div.content_1 h1,
 div.content_2 h1{
@@ -379,8 +380,8 @@ div.content_2 h2{
 div.content_1 p,
 div.content_2 p{
   text-align: center;
+  margin: 0;
 }
-
 /* 更多課程按鈕 */
 a.more_courses{
   text-decoration: none;
@@ -408,11 +409,174 @@ button.more_courses{
   transition: all .5s ease-out;
 }
 button.more_courses:hover{
-  bottom: -5%;
-  left: 50%;
   transform: translateX(-50%) scale(1.1) ;
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
 }
+@media (min-width: 992px) and (max-width: 1199.9px){
+  div.course_group{
+    width: 754px;
+  }
+  div.course_1,
+  div.course_2{
+    width: 747px;
+    height: 286px;
+  }
+  div.content_1 {
+    transform: translate(112%, -45%);
+  }
+  div.content_2 {
+    transform: translate(-118%, -46%);
+  }
+  div.content_1 h2,
+  div.content_2 h2{
+    margin: 30px 0 14px 0;
+  }
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.course_container{
+    padding-bottom: 130px;
+  }
+  div.course_container > h1{
+    padding-top: 90px;
+  }
+  div.course_container p.description{
+    margin-bottom: 55px;
+  }
+  div.course_group{
+    width: 670px;
+  }
+  /* 課程內容 */
+  div.course_1,
+  div.course_2{
+    width: 664px;
+    height: 254px;
+  }
+  div.course_2{
+    margin: 70px 0;
+  }
+  div.content_1 {
+    transform: translate(112%, -48%);
+  }
+  div.content_2 {
+    transform: translate(-116%, -49%);
+  }
+  div.content_1 h1,
+  div.content_2 h1{
+    font-size: 28px;
+  }
+  div.content_1 h2,
+  div.content_2 h2{
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin: 30px 0 14px 0;
+  }
+  div.content_1 p,
+  div.content_2 p{
+    margin: 0;
+  }
+  button.more_courses{
+    width: 155px;
+    letter-spacing: 8px;
+    text-indent: 8px;
+    bottom: -10%;
+  }
+  button.more_courses:hover{
+    bottom: -10%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  div.course_container{
+    padding-bottom: 120px;
+  }
+  div.course_container > h1{
+    padding-top: 70px;
+  }
+  div.course_container p.description{
+    margin-bottom: 50px;
+  }
+  div.course_group{
+    width: 500px;
+  }
+  div.course_1,
+  div.course_2{
+    width: 374px;
+    height: 286px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0px;
+    overflow: visible;
+    position: relative;
+  }
+  div.course_2{
+    margin: 220px auto;
+  }
+  div.course_1:hover,
+  div.course_2:hover{
+    transform: none;
+  }
+  div.course_1 img,
+  div.course_2 img{
+    width: 100%;
+    float: none;
+    border-radius: 10px 10px 0 0;
+  }
+  div.content_1,
+  div.content_2{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.16);
+  }
+  div.content_1{
+    transform: translate(0, 0);
+  }
+  div.content_2{
+    transform: translate(-50%, 0);
+  }
+  div.content_1 h1,
+  div.content_2 h1{
+    margin: 22px auto 18px;
+    font-size: 26px;
+    text-indent: 0;
+  }
+  div.content_1 h2,
+  div.content_2 h2{
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: auto auto 5px;
+    text-align: center;
+  }
+  div.content_1 p,
+  div.content_2 p{
+    padding-bottom: 22px;
+    letter-spacing: 2px;
+  }
+  button.more_courses{
+    width: 148px;
+    height: 56px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-indent: 6px;
+    bottom: -35%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+  button.more_courses:hover{
+    transform: translateX(-50%);
+    box-shadow: none;
+  }
+}
+@media (max-width: 575.9px){
+  div.course_container p.description{
+    letter-spacing: 4px;
+    text-indent: 4px;
+    margin-bottom: 36px;
+  }
+}
+
 
 /* 訂製花禮 */
 div.product_container{
