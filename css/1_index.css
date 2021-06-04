@@ -524,6 +524,7 @@ button.more_courses:hover{
   div.content_2{
     width: 100%;
     display: block;
+    background-color: white;
     position: absolute;
     top: 100%;
     right: 0;
@@ -545,7 +546,7 @@ button.more_courses:hover{
   div.content_1 h2,
   div.content_2 h2{
     font-size: 24px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin: auto auto 5px;
     text-align: center;
   }
@@ -611,6 +612,7 @@ button.more_courses:hover{
   div.content_2{
     width: 100%;
     display: block;
+    background-color: white;
     position: absolute;
     top: 100%;
     right: 0;
