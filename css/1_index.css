@@ -1,5 +1,4 @@
 @import "./common.css";
-
 @keyframes fade-in_1{
   0%{
     opacity: 0;
@@ -113,8 +112,8 @@ div.scroll_arrow{
   z-index: 1;
   opacity: .8;
   animation: fade-in_2 0.5s ease 3.8s both,
-            scroll 2s linear infinite both,
-            shadow 2s linear infinite both;
+  scroll 2s linear infinite both,
+  shadow 2s linear infinite both;
 }
 @media (min-width: 992px) and (max-width: 1199.9px){
   div.bg_block{
@@ -250,56 +249,55 @@ div.brand_introduction h1{
 }
 
 /* div.slider_container{
-  width: 650px;
-  height: 625px;
-  margin: 52px auto 20px;
-  position: relative;
+width: 650px;
+height: 625px;
+margin: 52px auto 20px;
+position: relative;
 }
 div.slider_container img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+opacity: 0;
+filter: alpha(opacity=0);
 }
 div.slider_container img {
-  animation: round 25s linear infinite;
+animation: round 25s linear infinite;
 }
-
 @keyframes round {
-  4%{
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  20%{
-    opacity: 1;
-    filter: alpha(opacity=100);
-    }
-  24% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
+4%{
+opacity: 1;
+filter: alpha(opacity=100);
+}
+20%{
+opacity: 1;
+filter: alpha(opacity=100);
+}
+24% {
+opacity: 0;
+filter: alpha(opacity=0);
+}
 }
 div.slider_container img:nth-child(1) {
-  animation-delay: 0s;
+animation-delay: 0s;
 }
 div.slider_container img:nth-child(2) {
-  animation-delay: 5s;
+animation-delay: 5s;
 }
 div.slider_container img:nth-child(3) {
-  animation-delay: 10s;
+animation-delay: 10s;
 }
 div.slider_container img:nth-child(4) {
-  animation-delay: 15s;
+animation-delay: 15s;
 }
 div.slider_container img:nth-child(5) {
-  animation-delay: 20s;
+animation-delay: 20s;
 }
 div.slider_container:hover img {
-  animation-play-state: paused;
+animation-play-state: paused;
 } */
 div.brand_introduction p{
   letter-spacing: 10px;
@@ -416,7 +414,7 @@ button.more_courses:hover{
 
 /* 訂製花禮 */
 div.product_container{
-  width: 1200px;
+  width: 1180px;
   margin: 120px auto 0;
   position: relative;
 }
@@ -472,7 +470,7 @@ a.wedding_flower:hover h2{
   transform: translate(100%, -50%);
 }
 a.dried_flower:hover h2{
-  transform: translate(-100%,-50%);
+  transform: translate(-100%, -50%);
 }
 /* 圖片設定 */
 a.fresh_flower img,
@@ -545,10 +543,126 @@ button.more_product{
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2);
   transform: translateY(-525%) scale(1);
   transition: all .5s ease-out;
-  }
+}
 button.more_product:hover{
   transform: translateY(-525%) scale(1.1);
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
+}
+@media (min-width: 992px) and (max-width: 1199.9px){
+  div.product_container{
+    width: 930px;
+    height: 1720px;
+    margin: 60px auto 0;
+    border: 1px solid red;
+  }
+  div.product_container p.description{
+    margin-bottom: 50px;
+  }
+  div.fresh_flower{
+    width: 800px;
+    padding: 34px 10px 34px 140px;
+  }
+  div.dried_flower{
+    width: 450px;
+    height: 518px;
+    margin-right: 0px;
+  }
+  a.dried_flower{
+    transform: translateY(-20%);
+  }
+  div.wedding_flower{
+    width: 780px;
+    padding: 50px 300px 85px 60px;
+    transform: translateY(-45%);
+  }
+  a.fresh_flower,
+  a.dried_flower,
+  a.wedding_flower{
+    width: 85%;
+    height: 85%;
+  }
+  a.fresh_flower h2,
+  a.dried_flower h2,
+  a.wedding_flower h2{
+    letter-spacing: 8px;
+    text-indent: 8px;
+    width: 208px;
+    height: 76px;
+    line-height: 76px;
+  }
+  button.more_product{
+    bottom: -5.8%;
+    right: 10%;
+  }
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+  div.product_container{
+    width: 720px;
+    height: 1420px;
+    margin: 60px auto 0;
+    /* border: 1px solid red; */
+  }
+  div.product_container p.description{
+    margin-bottom: 55px;
+  }
+  /* 鮮花花禮 */
+  div.fresh_flower{
+    width: 590px;
+    padding: 24px 47px 24px 90px;
+  }
+  /* 乾燥花禮 */
+  div.dried_flower{
+    width: 300px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: 45px;
+  }
+  a.dried_flower{
+    transform: translateY(-20%);
+  }
+  /* 婚禮花藝 */
+  div.wedding_flower{
+    width: 620px;
+    height: 490px;
+    padding: 30px 270px 50px 50px;
+    margin-left: auto;
+    transform: translateY(-30%);
+  }
+  a.fresh_flower,
+  a.dried_flower,
+  a.wedding_flower{
+    width: 100%;
+    height: 100%;
+  }
+  /* 文字框設定 */
+  a.fresh_flower h2,
+  a.dried_flower h2,
+  a.wedding_flower h2{
+    font-size: 24px;
+    letter-spacing: 6px;
+    text-indent: 6px;
+    width: 175px;
+    height: 76px;
+    line-height: 76px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  /* 了解更多按鈕 */
+  button.more_product{
+    width: 155px;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 8px;
+    text-indent: 8px;
+    bottom: -13.5%;
+    right: 7.5%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+
+}
+@media (max-width: 575.9px){
+
 }
 
 /* blog */
@@ -667,10 +781,10 @@ div.blog_group div a span.more{
   div.blog_container p.description{
     margin-bottom: 50px;
   }
-div.blog_group{
+  div.blog_group{
     width: 890px;
   }
-div.blog_group div a span.category{
+  div.blog_group div a span.category{
     top: 30%;
     right: 16px;
     transform: translateY(-50%);
@@ -702,38 +816,38 @@ div.blog_group div a span.category{
     margin-bottom: 50px;
   }
   div.blog_group{
-      width: 730px;
-      display: flex;
-      justify-content: center;
-    }
+    width: 730px;
+    display: flex;
+    justify-content: center;
+  }
   div.blog_group div a span.category{
-      top: 30%;
-      right: 16px;
-      transform: translateY(-150%);
-    }
+    top: 30%;
+    right: 16px;
+    transform: translateY(-150%);
+  }
   div.blog_group div a h2{
-      font-size: 24px;
-      margin: 28px 4px 18px;
-    }
+    font-size: 24px;
+    margin: 20px 4px 18px;
+  }
   div.blog_group div a time{
     margin-left: 20px;
   }
   div.blog_group div a p{
-      width: 84%;
-      text-align: left;
-      line-height: 2;
-      margin: 8px auto 0;
-    }
-  div.blog_group div.design_sharing a p{
-      margin: 8px auto 76px;
-    }
-  div.blog_group div.my_mood a p{
-      margin: 8px auto 39px;
-    }
-    div.blog_group div a span.more{
-      margin: auto 17px 20px;
-    }
+    width: 84%;
+    text-align: left;
+    line-height: 2;
+    margin: 8px auto 0;
   }
+div.blog_group div.design_sharing a p{
+    margin: 8px auto 76px;
+  }
+div.blog_group div.my_mood a p{
+    margin: 8px auto 39px;
+  }
+  div.blog_group div a span.more{
+    margin: auto 17px 20px;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.9px){
   div.blog_container{
     padding-bottom: 60px;
