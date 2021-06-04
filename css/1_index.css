@@ -529,7 +529,6 @@ button.more_courses:hover{
     top: 100%;
     right: 0;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.16);
   }
   div.content_1{
     transform: translate(0, 0);
@@ -617,7 +616,6 @@ button.more_courses:hover{
     top: 100%;
     right: 0;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.16);
   }
   div.content_1{
     transform: translate(0, 0);
