@@ -570,10 +570,89 @@ button.more_courses:hover{
   }
 }
 @media (max-width: 575.9px){
+  div.course_container{
+    padding-bottom: 115px;
+  }
+  div.course_container > h1{
+    padding-top: 70px;
+  }
   div.course_container p.description{
     letter-spacing: 4px;
     text-indent: 4px;
     margin-bottom: 36px;
+  }
+  div.course_group{
+    width: 320px;
+  }
+  div.course_1,
+  div.course_2{
+    width: 300px;
+    height: 229px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0px;
+    overflow: visible;
+    position: relative;
+  }
+  div.course_2{
+    margin: 150px auto;
+  }
+  div.course_1:hover,
+  div.course_2:hover{
+    transform: none;
+  }
+  div.course_1 img,
+  div.course_2 img{
+    width: 100%;
+    float: none;
+    border-radius: 10px 10px 0 0;
+  }
+  div.content_1,
+  div.content_2{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.16);
+  }
+  div.content_1{
+    transform: translate(0, 0);
+  }
+  div.content_2{
+    transform: translate(-50%, 0);
+  }
+  div.content_1 h1,
+  div.content_2 h1{
+    margin: 16px auto 10px;
+    letter-spacing: 8px;
+    font-size: 24px;
+    text-indent: 4px;
+  }
+  div.content_1 h2,
+  div.content_2 h2{
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: auto auto 14px;
+  }
+  div.content_1 p,
+  div.content_2 p{
+    display: none;
+  }
+  button.more_courses{
+    width: 148px;
+    height: 56px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-indent: 6px;
+    bottom: -35%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+  button.more_courses:hover{
+    transform: translateX(-50%);
+    box-shadow: none;
   }
 }
 
@@ -868,18 +947,14 @@ button.more_product:hover{
   }
 }
 @media (max-width: 575.9px){
-  div.product_container p.description{
-    letter-spacing: 4px;
-    text-indent: 4px;
-    margin-bottom: 36px;
-  }
   div.product_container{
     width: 350px;
     height: 1500px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+    margin: 10px auto 0;
   }
   div.product_container p.description{
+    letter-spacing: 4px;
+    text-indent: 4px;
     margin-bottom: 30px;
   }
   div.fresh_flower{
