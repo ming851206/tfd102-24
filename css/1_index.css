@@ -1,4 +1,5 @@
 @import "./common.css";
+
 @keyframes fade-in_1{
   0%{
     opacity: 0;
@@ -112,8 +113,8 @@ div.scroll_arrow{
   z-index: 1;
   opacity: .8;
   animation: fade-in_2 0.5s ease 3.8s both,
-  scroll 2s linear infinite both,
-  shadow 2s linear infinite both;
+            scroll 2s linear infinite both,
+            shadow 2s linear infinite both;
 }
 @media (min-width: 992px) and (max-width: 1199.9px){
   div.bg_block{
@@ -249,55 +250,56 @@ div.brand_introduction h1{
 }
 
 /* div.slider_container{
-width: 650px;
-height: 625px;
-margin: 52px auto 20px;
-position: relative;
+  width: 650px;
+  height: 625px;
+  margin: 52px auto 20px;
+  position: relative;
 }
 div.slider_container img {
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-opacity: 0;
-filter: alpha(opacity=0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 div.slider_container img {
-animation: round 25s linear infinite;
+  animation: round 25s linear infinite;
 }
+
 @keyframes round {
-4%{
-opacity: 1;
-filter: alpha(opacity=100);
-}
-20%{
-opacity: 1;
-filter: alpha(opacity=100);
-}
-24% {
-opacity: 0;
-filter: alpha(opacity=0);
-}
+  4%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  20%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    }
+  24% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
 }
 div.slider_container img:nth-child(1) {
-animation-delay: 0s;
+  animation-delay: 0s;
 }
 div.slider_container img:nth-child(2) {
-animation-delay: 5s;
+  animation-delay: 5s;
 }
 div.slider_container img:nth-child(3) {
-animation-delay: 10s;
+  animation-delay: 10s;
 }
 div.slider_container img:nth-child(4) {
-animation-delay: 15s;
+  animation-delay: 15s;
 }
 div.slider_container img:nth-child(5) {
-animation-delay: 20s;
+  animation-delay: 20s;
 }
 div.slider_container:hover img {
-animation-play-state: paused;
+  animation-play-state: paused;
 } */
 div.brand_introduction p{
   letter-spacing: 10px;
@@ -543,7 +545,7 @@ button.more_product{
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2);
   transform: translateY(-525%) scale(1);
   transition: all .5s ease-out;
-}
+  }
 button.more_product:hover{
   transform: translateY(-525%) scale(1.1);
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
@@ -553,7 +555,6 @@ button.more_product:hover{
     width: 930px;
     height: 1720px;
     margin: 60px auto 0;
-    border: 1px solid red;
   }
   div.product_container p.description{
     margin-bottom: 50px;
@@ -597,23 +598,22 @@ button.more_product:hover{
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
   div.product_container{
-    width: 720px;
+    width: 708px;
     height: 1420px;
     margin: 60px auto 0;
-    /* border: 1px solid red; */
   }
   div.product_container p.description{
     margin-bottom: 55px;
   }
   /* 鮮花花禮 */
   div.fresh_flower{
-    width: 590px;
+    width: 580px;
     padding: 24px 47px 24px 90px;
   }
   /* 乾燥花禮 */
   div.dried_flower{
-    width: 300px;
-    height: 370px;
+    width: 290px;
+    height: 340px;
     margin-left: auto;
     margin-right: 45px;
   }
@@ -622,9 +622,9 @@ button.more_product:hover{
   }
   /* 婚禮花藝 */
   div.wedding_flower{
-    width: 620px;
-    height: 490px;
-    padding: 30px 270px 50px 50px;
+    width: 610px;
+    height: 460px;
+    padding: 29px 311px 60px 43px;
     margin-left: auto;
     transform: translateY(-30%);
   }
@@ -654,7 +654,7 @@ button.more_product:hover{
     font-size: 18px;
     letter-spacing: 8px;
     text-indent: 8px;
-    bottom: -13.5%;
+    bottom: -8.8%;
     right: 7.5%;
   }
 }
@@ -664,6 +664,7 @@ button.more_product:hover{
 @media (max-width: 575.9px){
 
 }
+
 
 /* blog */
 div.blog_container{
@@ -686,7 +687,6 @@ div.blog_container > h1{
     transform: scale(1);
   }
 }
-
 div.blog_group{
   width: 1120px;
   margin: 0 auto;;
@@ -781,10 +781,10 @@ div.blog_group div a span.more{
   div.blog_container p.description{
     margin-bottom: 50px;
   }
-  div.blog_group{
+div.blog_group{
     width: 890px;
   }
-  div.blog_group div a span.category{
+div.blog_group div a span.category{
     top: 30%;
     right: 16px;
     transform: translateY(-50%);
@@ -816,34 +816,34 @@ div.blog_group div a span.more{
     margin-bottom: 50px;
   }
   div.blog_group{
-    width: 730px;
-    display: flex;
-    justify-content: center;
-  }
+      width: 730px;
+      display: flex;
+      justify-content: center;
+    }
   div.blog_group div a span.category{
-    top: 30%;
-    right: 16px;
-    transform: translateY(-150%);
-  }
+      top: 30%;
+      right: 16px;
+      transform: translateY(-150%);
+    }
   div.blog_group div a h2{
-    font-size: 24px;
-    margin: 20px 4px 18px;
-  }
+      font-size: 24px;
+      margin: 20px 4px 18px;
+    }
   div.blog_group div a time{
     margin-left: 20px;
   }
   div.blog_group div a p{
-    width: 84%;
-    text-align: left;
-    line-height: 2;
-    margin: 8px auto 0;
-  }
-div.blog_group div.design_sharing a p{
-    margin: 8px auto 76px;
-  }
-div.blog_group div.my_mood a p{
-    margin: 8px auto 39px;
-  }
+      width: 84%;
+      text-align: left;
+      line-height: 2;
+      margin: 8px auto 0;
+    }
+  div.blog_group div.design_sharing a p{
+      margin: 8px auto 76px;
+    }
+  div.blog_group div.my_mood a p{
+      margin: 8px auto 39px;
+    }
   div.blog_group div a span.more{
     margin: auto 17px 20px;
   }
@@ -1017,5 +1017,5 @@ div.conclusion h2{
     font-size: 15px;
     letter-spacing: 1px;
     text-indent: 1px;
+    }
   }
-}
