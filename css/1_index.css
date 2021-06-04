@@ -217,16 +217,55 @@ div.brand_introduction h1{
 /* 輪播 */
 #slider{
   margin: 52px auto 20px;
+  width: 580px;
+  height: 472px;
   position: relative;
-  border: 1px solid red;
 }
 
-#imgs{
-  border: 1px solid blue;
+#imgs img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  animation: round 20s linear infinite;
 }
-#imgs .-on{
-  display: inline;
+@keyframes round{
+  5%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  25%{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    }
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
 }
+#imgs img:nth-child(1){
+  animation-delay: 0s;
+}
+#imgs img:nth-child(2){
+  animation-delay: 4s;
+}
+#imgs img:nth-child(3){
+  animation-delay: 8s;
+}
+#imgs img:nth-child(4){
+  animation-delay: 12s;
+}
+#imgs img:nth-child(5){
+  animation-delay: 16s;
+}
+#imgs:hover img{
+  animation-play-state: paused;
+}
+
+
 #dots{
   /* width: 300px; */
   width: 135px;
@@ -249,58 +288,6 @@ div.brand_introduction h1{
   background-color: #9C7C62;
 }
 
-/* div.slider_container{
-  width: 650px;
-  height: 625px;
-  margin: 52px auto 20px;
-  position: relative;
-}
-div.slider_container img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-div.slider_container img {
-  animation: round 25s linear infinite;
-}
-
-@keyframes round {
-  4%{
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  20%{
-    opacity: 1;
-    filter: alpha(opacity=100);
-    }
-  24% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
-}
-div.slider_container img:nth-child(1) {
-  animation-delay: 0s;
-}
-div.slider_container img:nth-child(2) {
-  animation-delay: 5s;
-}
-div.slider_container img:nth-child(3) {
-  animation-delay: 10s;
-}
-div.slider_container img:nth-child(4) {
-  animation-delay: 15s;
-}
-div.slider_container img:nth-child(5) {
-  animation-delay: 20s;
-}
-div.slider_container:hover img {
-  animation-play-state: paused;
-} */
 div.brand_introduction p{
   letter-spacing: 10px;
   text-indent: 10px;
