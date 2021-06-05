@@ -373,29 +373,18 @@ div.content_2 p{
 a.more_courses{
   text-decoration: none;
 }
-button.more_courses{
-  border: none;
+button.more_courses.more{
   width: 170px;
   height: 60px;
   display: block;
   margin: 0 auto;
-  font-size: 18px;
-  color: white;
-  background-color: #9C7C62;
-  font-family: 'Noto Serif TC', serif;;
-  letter-spacing: 10px;
-  text-indent: 10px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2);
-  cursor: pointer;
   position: absolute;
   bottom: -5%;
   left: 50%;
   transform: translateX(-50%) scale(1) ;
   transition: all .5s ease-out;
 }
-button.more_courses:hover{
+button.more_courses.more:hover{
   transform: translateX(-50%) scale(1.1) ;
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
 }
@@ -421,10 +410,10 @@ button.more_courses:hover{
   div.content_2 h2{
     margin: 30px 0 14px 0;
   }
-  button.more_courses{
+  button.more_courses.more{
     bottom: -10%;
   }
-  button.more_courses:hover{
+  button.more_courses.more:hover{
     bottom: -10%;
   }
 }
@@ -470,13 +459,13 @@ button.more_courses:hover{
   div.content_2 p{
     margin: 0;
   }
-  button.more_courses{
+  button.more_courses.more{
     width: 155px;
     letter-spacing: 8px;
     text-indent: 8px;
     bottom: -10%;
   }
-  button.more_courses:hover{
+  button.more_courses.more:hover{
     bottom: -10%;
   }
 }
@@ -550,7 +539,7 @@ button.more_courses:hover{
     padding-bottom: 22px;
     letter-spacing: 2px;
   }
-  button.more_courses{
+  button.more_courses.more{
     width: 148px;
     height: 56px;
     font-size: 18px;
@@ -560,7 +549,7 @@ button.more_courses:hover{
     right: 50%;
     transform: translateX(-50%);
   }
-  button.more_courses:hover{
+  button.more_courses.more:hover{
     transform: translateX(-50%);
     box-shadow: none;
   }
@@ -636,17 +625,14 @@ button.more_courses:hover{
   div.content_2 p{
     display: none;
   }
-  button.more_courses{
+  button.more_courses.more{
     width: 148px;
     height: 56px;
-    font-size: 18px;
-    letter-spacing: 6px;
-    text-indent: 6px;
     bottom: -35%;
     right: 50%;
     transform: translateX(-50%);
   }
-  button.more_courses:hover{
+  button.more_courses.more:hover{
     transform: translateX(-50%);
     box-shadow: none;
   }
@@ -763,29 +749,16 @@ a.wedding_flower h2{
   z-index: 1;
 }
 /* 了解更多按鈕 */
-button.more_product{
-  display: inline-block;
-  border: none;
+button.more_product.more{
   width: 170px;
   height: 60px;
-  font-size: 18px;
-  color: white;
-  background-color: #9C7C62;
-  font-family: 'Noto Serif TC', serif;;
-  letter-spacing: 10px;
-  text-indent: 10px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border-radius: 5px;
   position: absolute;
   bottom: 0;
   right: 14%;
-  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2);
   transform: translateY(-525%) scale(1);
   transition: all .5s ease-out;
   }
-button.more_product:hover{
+button.more_product.more:hover{
   transform: translateY(-525%) scale(1.1);
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
 }
@@ -827,7 +800,7 @@ button.more_product:hover{
     height: 76px;
     line-height: 76px;
   }
-  button.more_product{
+  button.more_product..more{
     bottom: -5.5%;
     right: 10%;
   }
@@ -866,7 +839,7 @@ button.more_product:hover{
     height: 76px;
     line-height: 76px;
   }
-  button.more_product{
+  button.more_product.more{
     width: 155px;
     letter-spacing: 8px;
     text-indent: 8px;
@@ -928,17 +901,16 @@ button.more_product:hover{
     transform: translate(-100%, -65%);
   }
   /* 了解更多按鈕 */
-  button.more_product{
+  button.more_product.more{
     width: 148px;
     height: 56px;
-    font-size: 18px;
     letter-spacing: 6px;
     text-indent: 6px;
     bottom: 8.5%;
     right: 50%;
     transform: translateX(50%);
   }
-  button.more_product:hover{
+  button.more_product.more:hover{
     transform: translateX(50%);
     box-shadow: none;
   }
@@ -1027,17 +999,16 @@ button.more_product:hover{
     transform: none;
     box-shadow: none;
   }
-  button.more_product{
+  button.more_product.more{
     width: 148px;
     height: 56px;
-    font-size: 18px;
     letter-spacing: 6px;
     text-indent: 6px;
     bottom: 6%;
     right: 50%;
     transform: translateX(50%);
   }
-  button.more_product:hover{
+  button.more_product.more:hover{
     transform: translateX(50%);
     box-shadow: none;
   }
