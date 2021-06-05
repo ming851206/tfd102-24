@@ -35,7 +35,7 @@ function stop(){
 stop();
 
 /***取消滑動限制***/
-// function move(){
-//         document.body.style.overflow= "";//出現滾動條
-//         document.removeEventListener("touchmove",mo,false);
-// };
+function move(){
+        document.body.style.overflow= "";//出現滾動條
+        document.removeEventListener("touchmove",mo,false);
+};
