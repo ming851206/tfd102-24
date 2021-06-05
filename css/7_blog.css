@@ -205,6 +205,12 @@ div.grid_item:nth-child(8) a h2{
     gap: 12px;
     grid-template-rows: repeat(15, 55px);
   }
+  div.grid_item.aos-animate{
+    animation: none;
+  }
+  div.grid_item{
+    opacity: 1;
+  }
   div.grid_item a h2{
     font-size: 20px;
     padding: 8px 12px;
@@ -232,10 +238,20 @@ div.grid_item:nth-child(8) a h2{
     letter-spacing: 0;
     text-indent: 0;
   }
+  div.blog_category > span:nth-child(1){
+    font-weight: normal;
+    border-bottom: 2px solid #9C7C62;
+  }
   div.grid_container{
     padding: 0;
     gap: 12px;
     grid-template-rows: repeat(15, 40px);
+  }
+  div.grid_item.aos-animate{
+    animation: none;
+  }
+  div.grid_item{
+    opacity: 1;
   }
   div.grid_item a h2{
     font-size: 14px;
