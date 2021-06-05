@@ -25,6 +25,7 @@ $(function(){
     // $("div.menu_bt").css("backgroundImage", "url(../img/header_icon/menu.svg)");
   });
 });
+
 // 禁止手機版左右滑動
 var mo = function(e){e.preventDefault();};
 function stop(){
