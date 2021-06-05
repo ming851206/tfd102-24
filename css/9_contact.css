@@ -247,6 +247,7 @@ div.contact_table form textarea{
   border: none;
   border-bottom: 1px solid #B2B2B2;
   background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
   outline: none;
   font-size: 18px;
   height: 26px;

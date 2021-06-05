@@ -5,6 +5,22 @@ if (navigator.appVersion.indexOf("Win")!=-1){
   $("bg_block").css('transform','translate(-50%, -50%)');
 };
 
+// 禁止手機版左右滑動
+var mo=function(e){e.preventDefault();};
+function stop(){
+        document.body.style.overflow=‘hidden‘;
+        document.addEventListener("touchmove",mo,false);//禁止頁面滑動
+}
+//直接默認不讓滑動
+stop();
+
+/***取消滑動限制***/
+function move(){
+        document.body.style.overflow=‘‘;//出現滾動條
+        document.removeEventListener("touchmove",mo,false);
+}
+
+
 // 側邊導覽列
 $(function(){
   // 點擊按鈕，選單和遮罩顯現，
