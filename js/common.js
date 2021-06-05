@@ -26,7 +26,7 @@ $(function(){
   });
 });
 // 禁止手機版左右滑動
-var mo=function(e){e.preventDefault();};
+var mo = function(e){e.preventDefault();};
 function stop(){
         document.body.style.overflow = "hidden";
         document.addEventListener("touchmove",mo,false);//禁止頁面滑動
@@ -35,7 +35,7 @@ function stop(){
 stop();
 
 /***取消滑動限制***/
-function move(){
-        document.body.style.overflow= "";//出現滾動條
-        document.removeEventListener("touchmove",mo,false);
-};
+// function move(){
+//         document.body.style.overflow= "";//出現滾動條
+//         document.removeEventListener("touchmove",mo,false);
+// };
