@@ -9,7 +9,7 @@ div.banner{
 }
 main{
   margin: 0 auto 90px;
-  width: 1200px
+  width: 1180px;
 }
 main h1{
   margin-bottom: 70px;
@@ -23,6 +23,7 @@ div.blog_category{
 div.blog_category > span{
   color: #A8A393;
   font-size: 26px;
+  text-align: center;
   letter-spacing: 5px;
   text-indent: 5px;
   margin: 0 48px;
@@ -100,6 +101,7 @@ div.grid_item:nth-child(9){
 div.grid_item:nth-child(10){
   grid-area: 12 / 2 / 16 / 4;
 }
+
 /* 圖片、標題設定 */
 div.grid_item a img{
   width: 100%;
@@ -126,6 +128,124 @@ div.grid_item:nth-child(7) a h2,
 div.grid_item:nth-child(8) a h2{
   color: white;
 }
+
+@media (min-width: 992px) and (max-width: 1199.9px){
+  main{
+    margin: 0 auto 65px;
+    width: 944px;
+  }
+  main > h1{
+    margin-bottom: 65px;
+  }
+  div.blog_category{
+    margin: auto auto 65px;
+  }
+  div.blog_category > span{
+    margin: 0 28px;
+  }
+  div.grid_container{
+    grid-template-rows: repeat(15, 80px);
+  }
+  div.grid_item a h2{
+    padding: 10px 12px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+  }
+}
+@media (min-width: 768px) and ( max-width: 991.9px){
+  main{
+    margin: 0 auto 65px;
+    width: 708px;
+  }
+  main > h1{
+    margin-bottom: 50px;
+  }
+  div.blog_category{
+    margin: auto auto 50px;
+  }
+  div.blog_category > span{
+    margin: 0 16px;
+    font-size: 26px;
+    padding: 12px 16px;
+    letter-spacing: 4px;
+    text-indent: 4px;
+  }
+  div.grid_container{
+    padding: 0 28px;
+    gap: 18px;
+    grid-template-rows: repeat(15, 60px);
+  }
+  div.grid_item a h2{
+    font-size: 22px;
+    padding: 10px 12px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  main{
+    margin: 0 auto 120px;
+    width: 531px;
+  }
+  main > h1{
+    margin-bottom: 45px;
+  }
+  div.blog_category{
+    margin: auto auto 50px;
+  }
+  div.blog_category > span{
+    margin: 0 16px;
+    font-size: 24px;
+    padding: 12px 14px;
+    letter-spacing: 3px;
+    text-indent: 2px;
+  }
+  div.grid_container{
+    padding: 0;
+    gap: 12px;
+    grid-template-rows: repeat(15, 55px);
+  }
+  div.grid_item a h2{
+    font-size: 20px;
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    text-indent: 0;
+  }
+}
+@media (max-width: 575.9px){
+  main{
+    margin: 0 auto 90px;
+    width: 100%;
+  }
+  main > h1{
+    padding-top: 70px;
+    margin-bottom: 40px;
+  }
+  div.blog_category{
+    margin: auto auto 40px;
+  }
+  div.blog_category > span{
+    margin: 0 9px;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 6px 9px;
+    letter-spacing: 0;
+    text-indent: 0;
+  }
+  div.grid_container{
+    padding: 0;
+    gap: 12px;
+    grid-template-rows: repeat(15, 40px);
+  }
+  div.grid_item a h2{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 3px 5px;
+    letter-spacing: 1px;
+    text-indent: 0;
+  }
+}
+
 /* 頁籤 */
 div.pagination_block{
   margin: 100px auto;
@@ -160,4 +280,41 @@ ul.pagination li:nth-child(2) a{
 ul.pagination li a:hover{
   color: #9D7C62;
   background-color: #F4F0ED;
+}
+button.more{
+  border: none;
+  margin: 100px auto;
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #9D7C62;
+  font-family: 'Noto Serif TC', serif;
+  padding: 12px 16px;
+  letter-spacing: 6px;
+  text-indent: 6px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, .8);
+}
+@media (min-width: 576px) and (max-width: 767.9px){
+  div.pagination_block{
+    display: none;
+  }
+  button.more{
+    display: block;
+    margin: 80px auto;
+  }
+}
+@media (max-width: 575.9px){
+  div.pagination_block{
+    display: none;
+  }
+  button.more{
+    display: block;
+    margin: 65px auto;
+    padding: 10px 12px;
+    letter-spacing: 4px;
+    text-indent: 4px;
+  }
 }
