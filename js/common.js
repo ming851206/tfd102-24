@@ -28,7 +28,7 @@ $(function(){
 
 var mo=function(e){e.preventDefault();};
 function stop(){
-        document.body.style.overflow=‘hidden‘;
+        document.body.style.overflow="hidden";
         document.addEventListener("touchmove",mo,false);//禁止頁面滑動
 };
 //直接默認不讓滑動
@@ -37,6 +37,6 @@ stop();
 
 /***取消滑動限制***/
 function move(){
-        document.body.style.overflow=‘‘;//出現滾動條
+        document.body.style.overflow="";//出現滾動條
         document.removeEventListener("touchmove",mo,false);
 };
