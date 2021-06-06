@@ -97,6 +97,7 @@ div.process_container div{
   width: 211px;
   height: 211px;
   background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
   opacity: 0;
 }
@@ -187,41 +188,95 @@ div.process_container div.arrow{
 }
 @media (min-width: 576px) and (max-width: 767.9px){
   div.process{
-    padding: 78px 0 136px;
+    padding: 70px 0 50px;
     margin-bottom: 50px;
   }
   div.process h1{
     margin-bottom: 38px;
   }
   div.process_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
   div.process_container div{
-    display: inline-block;
-    width: 185px;
-    height: 185px;
-    position: relative;
-    opacity: 0;
-    /* border: 1px solid green; */
+    width: 170px;
+    height: 170px;
+    opacity: 1;
+    margin: 5px;
+  }
+  div.process_container div.pro{
+    transform: translateX(-50%);
   }
   div.process_container div p{
-    line-height: 1.5;
-    position: absolute;
-    bottom: -35%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    line-height: 1.7;
+    bottom: 50%;
+    left: 100%;
+    letter-spacing: 2px;
+    transform: translate(20%, 50%);
+  }
+  div.process_container div.pro_1 p,
+  div.process_container div.pro_3 p,
+  div.process_container div.pro_4 p{
+    bottom: 50%;
+    transform: translate(55%, 50%);
   }
   div.process_container div.arrow{
-    display: inline-block;
-    width: 42px;
-    height: 26px;
-    margin: 0 14px;
+    width: 34px;
+    height: 21px;
+    transform: translateX(250%) rotate(90deg);
+  }
+  div.process_container.aos-animate div.pro_1,
+  div.process_container.aos-animate div.pro_2,
+  div.process_container.aos-animate div.pro_3,
+  div.process_container.aos-animate div.pro_4,
+  div.process_container.aos-animate div.arrow{
+    animation: none;
   }
 }
 @media (max-width: 575.9px){
-
+  div.process{
+    padding: 70px 0 50px;
+    margin-bottom: 50px;
+  }
+  div.process h1{
+    margin-bottom: 38px;
+  }
+  div.process_container{
+    flex-direction: column;
+  }
+  div.process_container div{
+    width: 140px;
+    height: 140px;
+    opacity: 1;
+    margin: 8px;
+  }
+  div.process_container div.pro{
+    transform: translateX(-50%);
+  }
+  div.process_container div p{
+    line-height: 1.7;
+    bottom: 50%;
+    left: 100%;
+    letter-spacing: 2px;
+    transform: translate(20%, 50%);
+  }
+  div.process_container div.pro_1 p,
+  div.process_container div.pro_3 p,
+  div.process_container div.pro_4 p{
+    bottom: 50%;
+    transform: translate(55%, 50%);
+  }
+  div.process_container div.arrow{
+    width: 25px;
+    height: 16px;
+    transform: translateX(338%) rotate(90deg);
+  }
+  div.process_container.aos-animate div.pro_1,
+  div.process_container.aos-animate div.pro_2,
+  div.process_container.aos-animate div.pro_3,
+  div.process_container.aos-animate div.pro_4,
+  div.process_container.aos-animate div.arrow{
+    animation: none;
+  }
 }
 /* 訂購種類 */
 div.category{
