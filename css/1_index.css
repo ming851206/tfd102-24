@@ -628,6 +628,8 @@ button.more_courses.more:hover{
   button.more_courses.more{
     width: 148px;
     height: 56px;
+    letter-spacing: 6px;
+    text-indent: 6px;
     bottom: -35%;
     right: 50%;
     transform: translateX(-50%);
