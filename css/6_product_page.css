@@ -142,7 +142,7 @@ div.slider_container:hover h2.more{
 }
 /* 訂購表單 */
 div.order_form{
-  width: 1200px;
+  width: 1180px;
   margin: 50px auto 100px;
 }
 div.step{
@@ -209,14 +209,65 @@ button.other{
   margin: 60px auto 0;
 }
 @media (min-width: 992px) and (max-width: 1199.9px){
-
+  div.order_form{
+    width: 970px;
+  }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
-
+  div.order_form{
+    width: 748px;
+  }
+  div.step span{
+    letter-spacing: 4px;
+    text-indent: 4px;
+    margin: 0 30px;
+    padding: 12px 35px;
+    /* border: 1px solid red; */
+  }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-
+  div.order_form{
+    width: 556px;
+  }
+  div.step span{
+    letter-spacing: 3px;
+    text-indent: 3px;
+    margin: 0 20px;
+    padding: 12px 18px;
+  }
 }
 @media (max-width: 575.9px){
-
+  div.order_form{
+    width: 350px;
+  }
+  div.step span{
+    font-size: 20px;
+    letter-spacing: 0;
+    text-indent: 0;
+    margin: 0 14px;
+    padding: 6px 14px;
+  }
+  div.step span:nth-child(1){
+    font-weight: 600;
+    border-bottom: 2px solid #9C7C62;
+  }
+  div.form h2{
+    margin: 0 auto;
+  }
+  div.order_form{
+    width: 970px;
+  }
+  div.form label{
+    font-size: 16px;
+  }
+  div.form label input{
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    width: 200px;
+  }
+  button.other{
+    font-size: 16px;
+    padding: 10px 12px;
+  }
 }
