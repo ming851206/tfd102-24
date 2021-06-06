@@ -202,7 +202,7 @@ div.grid_item:nth-child(8) a h2{
   }
   div.grid_container{
     padding: 0;
-    gap: 12px;
+    gap: 8px;
     grid-template-rows: repeat(15, 55px);
   }
   div.grid_item.aos-animate{
@@ -244,7 +244,7 @@ div.grid_item:nth-child(8) a h2{
   }
   div.grid_container{
     padding: 0;
-    gap: 12px;
+    gap: 6px;
     grid-template-rows: repeat(15, 40px);
   }
   div.grid_item.aos-animate{
