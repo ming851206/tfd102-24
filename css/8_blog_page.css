@@ -30,23 +30,6 @@ div.info p{
   background-color: rgba(0, 0, 0, .05);
   padding: 8px 20px;
 }
-
-/* @keyframes appear {
-  0%{
-    opacity: 0;
-    transform: scale(0);
-    filter: blur(20px);
-  }
-  100%{
-    opacity: 1;
-    transform: scale(1);
-    filter: blur(0);
-  }
-} */
-/* div.content_1.aos-animate img{
-  animation: appear 1.2s ease-out both;
-} */
-
 /* 文章part 1 */
 div.content_1 {
   padding-bottom: 35px;
@@ -163,16 +146,12 @@ div.content_1 img{
 div.content_2{
   display: flex;
 }
-/* div.content_2.aos-animate img{
-  animation: appear 1.2s ease-out both;
-} */
 div.content_2 img{
   float: left;
   display: inline;
   width: 400px;
   height: 534px;
   margin-right: 46px;
-  /* transform: scale(1); */
 }
 div.content_2 p.p2{
   margin: 0;

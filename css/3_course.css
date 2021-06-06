@@ -16,48 +16,6 @@ img.calendar {
   margin: 50px auto;
 }
 
-/* 進場動畫 */
-/* div.calendar div.aos-animate img.calendar{
-  filter: blur(0);
-  opacity: 1;
-  transition: all 1.5s ease;
-}
-div.calendar div.aos-animate img:nth-child(2){
-  opacity: 1;
-  transform: scaleY(1);
-  transition: all 1.2s ease 1s;
-}
-div.calendar div.aos-animate img:nth-child(3){
-  opacity: 1;
-  transform: scaleY(1);
-  transition: all 1.2s ease 2s;
-}
-div.calendar div.aos-animate img:nth-child(4){
-  opacity: 1;
-  transform: scaleY(1);
-  transition: all 1.2s ease 3s;
-}
-div.calendar div.aos-animate img:nth-child(5){
-  opacity: 1;
-  transform: scaleY(1);
-  transition: all 1.2s ease 4s;
-}
-div.calendar div img.calendar{
-  width: 100%;
-  filter: blur(30px);
-  opacity: 0;
-}
-div.calendar div img.content{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: 50% 0%;
-} */
-
-
 /* 當月課程 */
 div.course_container{
   width: 100vw;
@@ -70,18 +28,6 @@ div.course_container h1{
   padding-bottom: 40px;
 }
 /* 課程介紹 */
-/* div.course_theme {
-  opacity: 0;
-  filter: blur(20px);
-  transform: scaleX(0);
-}
-/* 文字說明動畫 */
-/* div.course_theme.aos-animate{
-  opacity: 1;
-  filter: blur(0);
-  transform: scaleX(1);
-  transition: all 1.5s ease-out;
-} */
 div.course_theme h2{
   text-align: center;
   margin: 0 auto;
@@ -172,7 +118,7 @@ div.course_item a:hover img.second{
     padding-bottom: 35px;
   }
   div.course_container h1{
-    padding-top: 50px;
+    padding-top: 70px;
   }
   div.course_block{
     width: 450px;
@@ -195,10 +141,10 @@ div.course_item a:hover img.second{
     padding-bottom: 35px;
   }
   div.course_container h1{
-    padding-top: 50px;
+    padding-top: 60px;
   }
   div.course_theme h2{
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-indent: 2px;
   }
@@ -221,30 +167,3 @@ div.course_item a:hover img.second{
     display: none;
   }
 }
-
-/* 進場動畫 */
-/* @keyframes pop_up{
-  0%{
-    opacity: 0;
-    transform: scale(0);
-  }
-  100%{
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-div.course_block.aos-animate div.course_item:nth-child(1){
-  animation: pop_up 1.2s ease-out both;
-}
-div.course_block.aos-animate div.course_item:nth-child(4){
-  animation: pop_up 1.2s ease-out .3s both;
-}
-div.course_block.aos-animate div.course_item:nth-child(2){
-  animation: pop_up 1.2s ease-out .6s both;
-}
-div.course_block.aos-animate div.course_item:nth-child(3){
-  animation: pop_up 1.2s ease-out .9s both;
-}
-div.course_item{
-  opacity: 0;
-} */

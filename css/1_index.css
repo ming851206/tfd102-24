@@ -529,7 +529,7 @@ button.more_courses.more:hover{
   }
   div.content_1 h2,
   div.content_2 h2{
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 3px;
     margin: auto auto 5px;
     text-align: center;
@@ -938,7 +938,7 @@ button.more_product.more:hover{
   a.fresh_flower h2,
   a.dried_flower h2,
   a.wedding_flower h2{
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 5px;
     text-indent: 5px;
     width: 130px;
@@ -951,10 +951,10 @@ button.more_product.more:hover{
     z-index: 1;
   }
   a.fresh_flower h2{
-    transform: translate(1% ,-136%);
+    transform: translate(1% ,-134%);
   }
   a.fresh_flower:hover h2{
-    transform: translate(1% ,-136%);
+    transform: translate(1% ,-134%);
   }
   div.dried_flower{
     width: 290px;
@@ -970,12 +970,12 @@ button.more_product.more:hover{
   }
   a.dried_flower h2{
     right: 100%;
-    transform: translate(0 ,-136%);
+    transform: translate(0 ,-134%);
     z-index: 6;
   }
   a.dried_flower:hover h2{
     right: 100%;
-    transform: translate(0 ,-136%);
+    transform: translate(0 ,-134%);
   }
   div.wedding_flower{
     background-color: white;
@@ -988,12 +988,12 @@ button.more_product.more:hover{
   }
   a.wedding_flower h2{
     right: 0;
-    transform: translate(1% ,-136%);
+    transform: translate(1% ,-134%);
     z-index: 2;
   }
   a.wedding_flower:hover h2{
     right: 0;
-    transform: translate(1% ,-136%);
+    transform: translate(1% ,-134%);
   }
   a.fresh_flower:hover img,
   a.dried_flower:hover img,
@@ -1259,8 +1259,8 @@ div.blog_group div a span.category{
     margin-bottom: 36px;
   }
   div.blog_group{
-    width: 340px;
-    height: 1120px;
+    width: 300px;
+    height: 1000px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -1270,12 +1270,12 @@ div.blog_group div a span.category{
   }
   div.blog_group div a span.category{
     top: 50%;
-    right: 16px;
+    right: 15px;
     transform: translateY(140%);
   }
   div.blog_group div a h2{
-    font-size: 26px;
-    margin: 10px auto 8px;
+    font-size: 20px;
+    margin: 8px auto;
     text-align: center;
   }
   div.blog_group div a time{

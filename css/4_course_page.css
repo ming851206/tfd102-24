@@ -185,7 +185,10 @@ button.other{
     text-align: left;
   }
   select.time{
-    margin: 0 0 105px 24px;
+    margin: 0 0 80px 24px;
+  }
+  form label{
+    font-size: 20px;
   }
   form textarea{
     margin: 8px 0 24px 24px;
@@ -194,6 +197,8 @@ button.other{
   }
   button.other{
     margin: 30px auto 50px;
+    width: 158px;
+    height: 52px;
   }
 }
 
@@ -416,7 +421,7 @@ section > div a p{
   }
   section > div a div h2{
     line-height: 2;
-    font-size: 22px;
+    font-size: 20px;
   }
   section > div a div h2 span{
     font-size: 18px;
@@ -424,6 +429,6 @@ section > div a p{
     text-indent: 2px;
   }
   section > div a h2{
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px auto 5px;
   }

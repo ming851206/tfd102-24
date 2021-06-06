@@ -199,13 +199,14 @@ div.contact_info div.icons a.mail{
   div.contact_info div.all_info > div{
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 0 0 6px;
     padding: 0;
   }
   div.contact_info div.info p,
   div.contact_info div.info a{
-    letter-spacing: 0;
+    letter-spacing: 1px;
     text-indent: 0;
+    font-size: 16px;
   }
   div.contact_info div.icons{
     display: block;
@@ -282,13 +283,18 @@ button.other{
     background-image: none;
   }
   div.contact_table form{
+    margin-top: 35px;
     padding: 0 40px 60px;
+  }
+  div.contact_table form label{
+    font-size: 16px;
   }
   div.contact_table form input,
   div.contact_table form textarea{
     height: 22px;
     line-height: 22px;
     width: 172px;
+    font-size: 16px;
   }
   div.contact_table form textarea{
     vertical-align: middle;
