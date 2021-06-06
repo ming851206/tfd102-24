@@ -29,13 +29,13 @@ div.explanation p{
     margin: auto auto 82px;
   }
   div.explanation p{
-    padding: 0 36px;
+    padding: 0 50px;
   }
 }
 @media (max-width: 575.9px){
   div.explanation{
     width: 100%;
-    margin: auto auto 76px;;
+    margin: auto auto 70px;;
   }
   div.explanation h1{
     margin-bottom: 30px;
@@ -247,7 +247,7 @@ div.process_container div.arrow{
     width: 140px;
     height: 140px;
     opacity: 1;
-    margin: 8px;
+    margin: 16px;
   }
   div.process_container div.pro{
     transform: translateX(-50%);
@@ -313,7 +313,6 @@ div.category a > h2{
   border: 1px solid #DDDDDD;
   display: block;
   margin: 0 auto;
-  padding: 0;
   font-size: 26px;
   color: #9D7C62;
   font-weight: normal;
@@ -328,15 +327,79 @@ div.category a > h2{
   left: 50%;
   transform: translate(-50%, -100%);
 }
-@media (min-width: 992px) and (max-width: 1199.9px){
-
-}
 @media (min-width: 768px) and ( max-width: 991.9px){
-
+  div.category h1{
+    margin: 110px auto 120px;
+    padding: 0;
+  }
+  div.category a{
+    width: 749px;
+    margin: auto auto 160px;
+  }
+  div.category a:nth-child(4){
+    margin-bottom: 100px;
+  }
+  div.category a > h2{
+    padding: 10px 0;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-
+  div.category h1{
+    margin: 90px auto 95px;
+    padding: 0;
+  }
+  div.category a{
+    column-gap: 2px;
+    width: 550px;
+    margin: auto auto 130px;
+  }
+  div.category a:nth-child(4){
+    margin-bottom: 90px;
+  }
+  div.category a div img{
+    width: 100%;
+  }
+  div.category a div img.second{
+    display: block;
+    margin-top: 2px;
+  }
+  div.category a div:hover img.first,
+  div.category a div:hover img.second{
+    display: block;
+  }
+  div.category a > h2{
+    font-size: 22px;
+    padding: 7px 0;
+  }
 }
 @media (max-width: 575.9px){
-
+  div.category h1{
+    margin: 85px auto 95px;
+    padding: 0;
+  }
+  div.category a{
+    column-gap: 2px;
+    width: 100%;
+    margin: auto auto 125px;
+  }
+  div.category a:nth-child(4){
+    margin-bottom: 80px;
+  }
+  div.category a div img{
+    width: 100%;
+  }
+  div.category a div img.second{
+    display: block;
+    margin-top: 2px;
+  }
+  div.category a div:hover img.first,
+  div.category a div:hover img.second{
+    display: block;
+  }
+  div.category a > h2{
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-indent: 0;
+    padding: 7px 0;
+  }
 }
