@@ -79,16 +79,16 @@ h2.bg_text{
 }
 @keyframes shadow {
   25%{
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
   }
   50%{
-    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.7));
   }
   75%{
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
   }
   100%{
-    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.7));
   }
 }
 @keyframes fade-in_2{
@@ -101,7 +101,7 @@ h2.bg_text{
 }
 div.scroll_arrow{
   display: inline-block;
-  background-image: url(../img/1_home/scroll_arrow.svg);
+  background-image: url(../img/1_home/scroll_arrow.png);
   width: 90px;
   height: 90px;
   background-size: cover;
@@ -109,7 +109,7 @@ div.scroll_arrow{
   bottom: 0;
   right: 0;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.7));
   z-index: 1;
   opacity: .8;
   animation: fade-in_2 0.5s ease 3.8s both,
@@ -1339,11 +1339,34 @@ div.conclusion h2{
   transform: translate(-50%, -50%) scaleY(0);
   transform-origin: 50% 0%;
 }
-
+section.aos-animate #go_top{
+  opacity: 1;
+  transition: all 1s ease 1.2s;
+  filter: blur(0);
+}
+#go_top{
+  display: inline-block;
+  background-image: url(../img/1_home/go-top.svg);
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  cursor: pointer;
+  opacity: 0;
+  filter: blur(10px);
+}
 @media (min-width: 768px) and ( max-width: 991.9px){
   div.conclusion h2{
     letter-spacing: 6px;
     text-indent: 6px;
+  }
+  #go_top{
+    width: 76px;
+    height: 76px;
+    bottom: 16px;
+    right: 16px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
@@ -1355,6 +1378,12 @@ div.conclusion h2{
     font-size: 22px;
     letter-spacing: 3px;
     text-indent: 3px;
+  }
+  #go_top{
+    width: 68px;
+    height: 68px;
+    bottom: 15px;
+    right: 15px;
   }
 }
 @media (max-width: 575.9px){
@@ -1369,5 +1398,11 @@ div.conclusion h2{
     font-size: 15px;
     letter-spacing: 1px;
     text-indent: 1px;
+    }
+    #go_top{
+      width: 50px;
+      height: 50px;
+      bottom: 10px;
+      right: 10px;
     }
   }

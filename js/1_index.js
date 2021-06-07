@@ -25,3 +25,14 @@ $(document).ready(function(){
     cssEase: 'linear'
   });
 });
+
+// go-top
+$(function(){
+  $("#go_top").on("click", function(e){
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 750);
+  });
+
+});
