@@ -12,7 +12,7 @@
     <g transform="matrix(1, 0, 0, 1, 1092.97, 7293.14)" filter="url(#圓圈)">
       <path id="圓圈-2" data-name="圓圈" d="M40,0A40,40,0,0,1,80,40a40.838,40.838,0,0,1-1.359,10.375A40,40,0,1,1,40,0Z" transform="translate(15 15)" fill="#9c7c62" opacity="0.4"/>
     </g>
-    <text id="TOP" transform="translate(1146.242 7364.704)" fill="#fff" font-size="23" font-family="NotoSerifCJKtc-Regular, Noto Serif CJK TC" letter-spacing="0.045em"><tspan x="-24.357" y="0">TOP</tspan></text>
+    <text id="TOP" transform="translate(1148.242 7364.704)" fill="#fff" font-size="23" font-family="NotoSerifCJKtc-Regular, Noto Serif CJK TC" letter-spacing="0.045em"><tspan x="-24.357" y="0">TOP</tspan></text>
     <g id="Group_103" data-name="Group 103" transform="translate(1131.682 7324.967)">
       <path id="往上1" d="M0,0,19.6,1.2V3.009H.219Z" transform="matrix(-0.839, 0.545, -0.545, -0.839, 18.075, 2.525)" fill="#fff"/>
       <path id="往上2" d="M0,3.01l19.6-1.2V0H.219Z" transform="matrix(0.839, 0.545, -0.545, 0.839, 16.142, 0)" fill="#fff"/>

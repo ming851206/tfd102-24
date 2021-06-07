@@ -79,16 +79,16 @@ h2.bg_text{
 }
 @keyframes shadow {
   25%{
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 1px 8px rgba(0, 0, 0, 0.3));
   }
   50%{
-    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.5));
   }
   75%{
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 1px 8px rgba(0, 0, 0, 0.3));
   }
   100%{
-    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.5));
   }
 }
 @keyframes fade-in_2{
@@ -96,7 +96,7 @@ h2.bg_text{
     opacity: 0;
   }
   100%{
-    opacity: .8;
+    opacity: 1;
   }
 }
 div.scroll_arrow{
@@ -109,9 +109,9 @@ div.scroll_arrow{
   bottom: 0;
   right: 0;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.5));
   z-index: 1;
-  opacity: .8;
+  opacity: 1;
   animation: fade-in_2 0.5s ease 3.8s both,
             scroll 2s linear infinite both,
             shadow 2s linear infinite both;
@@ -1399,10 +1399,10 @@ section.aos-animate #go_top{
     letter-spacing: 1px;
     text-indent: 1px;
     }
-    #go_top{
-      width: 50px;
-      height: 50px;
-      bottom: 10px;
-      right: 10px;
-    }
+  #go_top{
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+  }
   }
