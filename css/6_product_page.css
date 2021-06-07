@@ -27,17 +27,46 @@ div.explanation ul{
   line-height: 1.5;
   list-style: decimal;
 }
-@media (min-width: 992px) and (max-width: 1199.9px){
-
+div.explanation ul li{
+  margin-bottom: 2px;
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
-
+  div.explanation{
+    margin: 0 auto 60px;
+    width: 700px;
+  }
+  div.explanation h2{
+    margin: 30px auto 10px 15px;
+  }
+  div.explanation ul li{
+    margin-bottom: 3px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-
+  div.explanation{
+    margin: 0 auto 60px;
+    width: 520px;
+    /* border: 1px solid red; */
+  }
+  div.explanation h2{
+    margin: 30px auto 10px 15px;
+  }
+  div.explanation ul li{
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 575.9px){
-
+  div.explanation{
+    margin: 0 auto 60px;
+    width: 320px;
+  }
+  div.explanation h2{
+    margin: 30px auto 10px 15px;
+  }
+  div.explanation ul li{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 }
 
 /* 圖片區 */
@@ -143,7 +172,8 @@ div.slider_container:hover h2.more{
 /* 訂購表單 */
 div.order_form{
   width: 1180px;
-  margin: 50px auto 100px;
+  margin: 50px auto 0;
+  padding-bottom: 100px;
 }
 div.step{
   display: flex;
@@ -253,9 +283,6 @@ button.other{
   }
   div.form h2{
     margin: 0 auto;
-  }
-  div.order_form{
-    width: 970px;
   }
   div.form label{
     font-size: 16px;
