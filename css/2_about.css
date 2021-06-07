@@ -174,30 +174,20 @@ p.text_1{
   h1.about_brand{
     padding-top: 70px;
   }
-  div.para_1.aos-animate{
-    transition: none;
-  }
   div.para_1{
     width: 455px;
     height: 330px;
     margin: 40px auto;
-    opacity: 1;
-    filter: blur(0px);
   }
 }
 @media (max-width: 575.9px){
   h1.about_brand{
     padding-top: 70px;
   }
-  div.para_1.aos-animate{
-    transition: none;
-  }
   div.para_1{
     width: 280px;
     height: 203px;
     margin: 40px auto 25px;
-    opacity: 1;
-    filter: blur(0px);
   }
   p.text_1{
     width: 280px;
@@ -245,17 +235,10 @@ p.text_2{
   line-height: 2;
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-  div.photo_1.aos-animate,
-  div.photo_2.aos-animate{
-    transition: none;
-  }
   div.photo_1, div.photo_2{
     width: 260px;
     height: 260px;
     margin: 10px auto;
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0px);
   }
   div.photo_1{
     margin-right: 0px;
@@ -271,17 +254,10 @@ p.text_2{
   div.photo_container{
     margin: 25px 0 25px 0;
   }
-  div.photo_1.aos-animate,
-  div.photo_2.aos-animate{
-    transition: none;
-  }
   div.photo_1, div.photo_2{
     width: 160px;
     height: 160px;
     margin: 10px auto;
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0px);
   }
   div.photo_1{
     margin-right: 0px;
