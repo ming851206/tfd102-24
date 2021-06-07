@@ -12,6 +12,7 @@ div.banner{
 div.category_container{
   width: 100%;
   background-color: rgba(244, 239, 225, .25);
+  padding-bottom: 15px;
 }
 div.explanation{
   text-align: left;
@@ -31,6 +32,9 @@ div.explanation ul li{
   margin-bottom: 2px;
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
+  div.category_container{
+    padding-bottom: 60px;
+  }
   div.explanation{
     margin: 0 auto 60px;
     width: 700px;
@@ -43,10 +47,12 @@ div.explanation ul li{
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
+  div.category_container{
+    padding-bottom: 15px;
+  }
   div.explanation{
     margin: 0 auto 60px;
     width: 520px;
-    /* border: 1px solid red; */
   }
   div.explanation h2{
     margin: 30px auto 10px 15px;
@@ -56,6 +62,9 @@ div.explanation ul li{
   }
 }
 @media (max-width: 575.9px){
+  div.category_container{
+    padding-bottom: 15px;
+  }
   div.explanation{
     margin: 0 auto 60px;
     width: 320px;
@@ -157,23 +166,75 @@ div.slider_container:hover img{
 div.slider_container:hover h2.more{
   display: block;
 }
-@media (min-width: 992px) and (max-width: 1199.9px){
-
-}
 @media (min-width: 768px) and ( max-width: 991.9px){
-
+  div.row{
+    width: 715px;
+  }
+  div.photo_container a{
+    margin-bottom: 20px;
+  }
+  div.photo_container a.g1,
+  div.photo_container a.g2{
+    margin-right: 20px;
+  }
+  div.photo_container a > h2{
+    padding: 8px 0;
+  }
+  /* 輪播 */
+  div.slider_container{
+    width: 340px;
+    height: 313px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
-
+  div.row{
+    width: 400px;
+  }
+  div.photo_container a{
+    margin-bottom: 65px;;
+  }
+  div.photo_container a.g1,
+  div.photo_container a.g2{
+    margin-right: 0;
+  }
+  div.photo_container a > h2{
+    padding: 6px 0;
+  }
+  div.slider_container{
+    width: 360px;
+    height: 347px;
+    margin: 0 20px;
+  }
 }
 @media (max-width: 575.9px){
-
+  div.row{
+    width: 320px;
+  }
+  div.photo_container a{
+    margin-bottom: 45px;;
+  }
+  div.photo_container a.g1,
+  div.photo_container a.g2{
+    margin-right: 0;
+  }
+  div.photo_container a > h2{
+    padding: 6px 0;
+  }
+  /* 輪播 */
+  div.slider_container{
+    width: 280px;
+    height: 270px;
+    margin: 0 20px;
+  }
 }
 /* 訂購表單 */
 div.order_form{
   width: 1180px;
   margin: 50px auto 0;
   padding-bottom: 100px;
+}
+div.order_form h1{
+  padding-top: 40px;
 }
 div.step{
   display: flex;
@@ -224,7 +285,7 @@ div.form label input{
   font-size: 18px;
   height: 26px;
   line-height: 26px;
-  font-family: 'Noto Serif TC', serif;;
+  font-family: 'Noto Serif TC', serif;
   width: 380px;
   padding: 0;
   margin: 0;
@@ -242,22 +303,30 @@ button.other{
   div.order_form{
     width: 970px;
   }
+  div.order_form h1{
+    padding-top: 30px;
+  }
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
   div.order_form{
     width: 748px;
+  }
+  div.order_form h1{
+    padding-top: 25px;
   }
   div.step span{
     letter-spacing: 4px;
     text-indent: 4px;
     margin: 0 30px;
     padding: 12px 35px;
-    /* border: 1px solid red; */
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px){
   div.order_form{
     width: 556px;
+  }
+  div.order_form h1{
+    padding-top: 25px;
   }
   div.step span{
     letter-spacing: 3px;
@@ -265,10 +334,16 @@ button.other{
     margin: 0 20px;
     padding: 12px 18px;
   }
+  div.form label input{
+    width: 280px;
+  }
 }
 @media (max-width: 575.9px){
   div.order_form{
     width: 350px;
+  }
+  div.order_form h1{
+    padding-top: 0px;
   }
   div.step span{
     font-size: 20px;
@@ -291,7 +366,7 @@ button.other{
     font-size: 16px;
     height: 22px;
     line-height: 22px;
-    width: 200px;
+    width: 160px;
   }
   button.other{
     font-size: 16px;
