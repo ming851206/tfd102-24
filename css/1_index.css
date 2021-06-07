@@ -277,7 +277,7 @@ div.brand_introduction p{
     height: 65px;
   }
   div.brand_introduction h1{
-    font-size: 13.5px;
+    font-size: 13.4px;
     padding-top: 14px;
     letter-spacing: 0;
     text-indent: 0;
@@ -288,7 +288,7 @@ div.brand_introduction p{
     height: 260px;
   }
   div.brand_introduction p{
-    letter-spacing: 0px;
+    letter-spacing: 2px;
     text-indent: 0px;
     line-height: 2.5;
     margin-top: 70px;
@@ -618,7 +618,7 @@ button.more_courses.more:hover{
   div.content_1 h2,
   div.content_2 h2{
     font-size: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     margin: auto auto 14px;
   }
   div.content_1 p,
