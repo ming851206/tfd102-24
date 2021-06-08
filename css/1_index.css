@@ -538,6 +538,7 @@ button.more_courses.more:hover{
   div.content_2 p{
     padding-bottom: 22px;
     letter-spacing: 2px;
+    font-size: 16px;
   }
   button.more_courses.more{
     width: 148px;
