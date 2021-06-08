@@ -386,7 +386,7 @@ button.more_courses.more{
 }
 button.more_courses.more:hover{
   transform: translateX(-50%) scale(1.1) ;
-  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, .3);
 }
 @media (min-width: 992px) and (max-width: 1199.9px){
   div.course_group{
@@ -763,7 +763,7 @@ button.more_product.more{
   }
 button.more_product.more:hover{
   transform: translateY(-525%) scale(1.1);
-  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, .3);
 }
 @media (min-width: 992px) and (max-width: 1199.9px){
   div.product_container{
@@ -803,7 +803,7 @@ button.more_product.more:hover{
     height: 76px;
     line-height: 76px;
   }
-  button.more_product..more{
+  button.more_product.more{
     bottom: -5.5%;
     right: 10%;
   }
