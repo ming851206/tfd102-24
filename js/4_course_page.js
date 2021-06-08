@@ -36,8 +36,8 @@ document.addEventListener("click", function(e){
 
 // 不同瀏覽器微調
 
-$(function(){
-  if($.support.safari) {
-    alert("this is safari!");
-  };
+$(document).ready(function(){
+  var brow=$.support;
+  var bInfo="";
+  if(brow.safari){bInfo="AppleSafari" brow.version;}
 });
