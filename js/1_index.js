@@ -33,14 +33,26 @@ $(document).ready(function(){
 //   };
 // });
 // is.safari();
-// => true if current browser is safari
+// =>   console.log("true");
+      $("div.content_2").css("transform", "translate(-140%, -48%)");
 
-if(is.safari()){
-  console.log("true");
- $("div.content_2").css("transform", "translate(-140%, -48%)");
-}else{
-  console.log("no");
+function detectBrowser(){
+  var sAgent = navigator.userAgent.toLowerCase();
+  this.isSa = (sAgent.indexOf("safari")!=-1);
 };
+
+var oBrowser = new detectBrowser();
+if (oBrowser.isSa && !oBrowser.isChr){
+  $("div.content_2").css("transform", "translate(-140%, -48%)");
+}
+
+
+// if(is.safari()){
+//   console.log("true");
+//  $("div.content_2").css("transform", "translate(-140%, -48%)");
+// }else{
+//   console.log("no");
+// };
 
 // $(document).ready(function(){
 //   var brow= $.support;
