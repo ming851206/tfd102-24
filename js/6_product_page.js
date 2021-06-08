@@ -1,7 +1,7 @@
 window.onload = function () {
     let images = [
-        '../img/6_product_page/banner.jpg',
-        '../img/header_icon/logo.svg',
+        './img/6_product_page/banner.jpg',
+        './img/header_icon/logo.svg',
     ];
 
     images.forEach((src) => {
