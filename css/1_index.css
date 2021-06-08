@@ -1357,6 +1357,9 @@ section.aos-animate #go_top{
   filter: blur(10px);
 }
 @media (min-width: 768px) and ( max-width: 991.9px){
+  section{
+    padding: 0px 0;
+  }
   div.conclusion h2{
     letter-spacing: 6px;
     text-indent: 6px;
