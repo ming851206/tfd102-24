@@ -34,13 +34,12 @@ function detectBrowser(){
 }
 var oBrowser = new detectBrowser();
 if (oBrowser.isSa && !oBrowser.isChr){
-  if (window.innerWidth < 576){
-    $("div.content_2").css("transform", "translate(-126%, -48%)");
-  }else if (window.innerWidth >= 576){
-    $("div.content_2").css("transform", "translate(-130%, -46%)");
-  }else if(window.innerWidth >= 1200){
-    $("div.content_2").css("transform", "translate(-140%, -48%)");
-  };
+    $("div.content_2").css("width", "270px");
+    if(window.innerWidth < 768){
+      $("div.content_2").css("width", "374px");
+    }else if(window.innerWidth < 576){
+      $("div.content_2").css("width", "300px");
+    }
 };
 
 
