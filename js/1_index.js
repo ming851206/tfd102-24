@@ -34,12 +34,14 @@ function detectBrowser(){
 }
 var oBrowser = new detectBrowser();
 if (oBrowser.isSa && !oBrowser.isChr){
-    $("div.content_2").css("width", "270px");
-    if(window.innerWidth < 768){
-      $("div.content_2").css("width", "374px");
-    }else if(window.innerWidth < 576){
-      $("div.content_2").css("width", "300px");
-    }
+  let content_2 = document.getElementsByClassName("content_2")[0];
+  if(window.innerWidth >= 768){
+    content_2.style.width = "270px";
+  }else if(window.innerWidth < 767 && window.innerWidth >= 576){
+    content_2.style.width = "374px";
+  }else{
+    content_2.style.width = "300px";
+  }
 };
 
 
