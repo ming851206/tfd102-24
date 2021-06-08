@@ -33,3 +33,11 @@ document.addEventListener("click", function(e){
     img_3.classList.remove("-on");
   }
 });
+
+// 不同瀏覽器微調
+
+$(function(){
+  if($.support.safari) {
+    alert("this is safari!");
+  };
+});
