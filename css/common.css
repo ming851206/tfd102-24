@@ -589,15 +589,17 @@ form.member_content input:focus{
   letter-spacing: 1px;
   font-size: 14px;
 }
-p.get_pw{
+a.get_pw{
   color: #B2B2B2;
   text-decoration: underline;
   cursor: pointer;
   text-align: right;
   font-size: 16px;
   margin: 10px 5px 0;
+  display: block;
+  letter-spacing: 2px;
 }
-p.get_pw:hover{
+a.get_pw:hover{
   color: #9D7C62;
 }
 button.other{
@@ -607,6 +609,7 @@ button.other{
   text-indent: 3px !important;
   margin: 45px auto !important;
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, .5) !important;
+  white-space: nowrap !important;
 }
 button.other.log_in{
   margin: 16px auto 45px !important;
@@ -672,5 +675,8 @@ div.member{
     text-indent: 0;
     letter-spacing: 0;
     font-size: 13px;
+  }
+  a.get_pw{
+    font-size: 14px;
   }
 }
