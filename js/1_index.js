@@ -1,8 +1,8 @@
 window.onload = function () {
     let images = [
         './img/header_icon/logo.svg',
-        '../img/header_icon/logo.svg',
-        '../img/1_home/scroll_arrow.png'
+        './img/header_icon/logo.svg',
+        './img/1_home/scroll_arrow.png'
     ];
 
     images.forEach((src) => {
