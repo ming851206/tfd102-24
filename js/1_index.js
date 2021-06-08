@@ -33,27 +33,9 @@ function detectBrowser(){
 };
 
 var oBrowser = new detectBrowser();
-if (oBrowser.isSa && !oBrowser.isChr){
+if (oBrowser.isSa){
   $("div.content_2").css("transform", "translate(-140%, -48%)");
 }
-
-
-// if(is.safari()){
-//   console.log("true");
-//  $("div.content_2").css("transform", "translate(-140%, -48%)");
-// }else{
-//   console.log("no");
-// };
-
-// $(document).ready(function(){
-//   var brow= $.support;
-//   var bInfo="";
-//   if(brow.msie){bInfo="MicrosoftInternetExplorer" brow.version;}
-//   if(brow.mozilla){bInfo="MozillaFirefox" brow.version;}
-//   if(brow.safari){bInfo="AppleSafari" brow.version;}
-//   if(brow.opera){bInfo="Opera" brow.version;}
-//   alert(bInfo);
-// });
 
 
 // go-top
