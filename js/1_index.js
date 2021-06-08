@@ -35,6 +35,7 @@ function detectBrowser(){
 var oBrowser = new detectBrowser();
 
 if (oBrowser.isSa && !oBrowser.isChr){
+  alert("sa");
   $("div.content_2").css("transform", "translate(-140%, -48%)");
 }
 
