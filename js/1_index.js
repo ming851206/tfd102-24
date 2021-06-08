@@ -29,7 +29,7 @@ $(document).ready(function(){
 $(function(){
   if($.support.safari) {
     consolo.log("this is safari!");
-    $("")
+    $("div.content_2").css("transform", "translate(-140%, -48%)");
   };
 });
 //
