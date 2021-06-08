@@ -28,19 +28,20 @@ $(document).ready(function(){
 // 不同瀏覽器微調
 $(function(){
   if($.support.safari) {
-    alert("this is safari!");
+    consolo.log("this is safari!");
+    $("")
   };
 });
-
-$(document).ready(function(){
-  var brow= $.support;
-  var bInfo="";
-  if(brow.msie){bInfo="MicrosoftInternetExplorer" brow.version;}
-  if(brow.mozilla){bInfo="MozillaFirefox" brow.version;}
-  if(brow.safari){bInfo="AppleSafari" brow.version;}
-  if(brow.opera){bInfo="Opera" brow.version;}
-  alert(bInfo);
-});
+//
+// $(document).ready(function(){
+//   var brow= $.support;
+//   var bInfo="";
+//   if(brow.msie){bInfo="MicrosoftInternetExplorer" brow.version;}
+//   if(brow.mozilla){bInfo="MozillaFirefox" brow.version;}
+//   if(brow.safari){bInfo="AppleSafari" brow.version;}
+//   if(brow.opera){bInfo="Opera" brow.version;}
+//   alert(bInfo);
+// });
 
 
 // go-top
