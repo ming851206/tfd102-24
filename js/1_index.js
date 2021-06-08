@@ -26,12 +26,19 @@ $(document).ready(function(){
   });
 });
 // 不同瀏覽器微調
-$(function(){
-  if($.support.safari) {
-    consolo.log("this is safari!");
-    $("div.content_2").css("transform", "translate(-140%, -48%)");
-  };
-});
+// $(function(){
+//   if($.support.safari) {
+//     consolo.log("this is safari!");
+//     $("div.content_2").css("transform", "translate(-140%, -48%)");
+//   };
+// });
+// is.safari();
+// => true if current browser is safari
+
+if(is.safari()){
+  console.log("true");
+ $("div.content_2").css("transform", "translate(-140%, -48%)");
+}
 
 // $(document).ready(function(){
 //   var brow= $.support;
