@@ -38,7 +38,9 @@ $(document).ready(function(){
 if(is.safari()){
   console.log("true");
  $("div.content_2").css("transform", "translate(-140%, -48%)");
-}
+}else{
+  console.log("no");
+};
 
 // $(document).ready(function(){
 //   var brow= $.support;
