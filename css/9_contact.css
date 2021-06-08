@@ -76,6 +76,7 @@ div.contact_info div.info a{
 div.contact_info div.icons{
   display: inline-block;
   opacity: .85;
+  width: 177px;
 }
 div.contact_info div.icons a{
   width: 35px;
