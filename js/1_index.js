@@ -36,7 +36,8 @@ var oBrowser = new detectBrowser();
 if (oBrowser.isSa && !oBrowser.isChr){
   if(window.innerWidth >= 1200){
     $("div.content_2").css("transform", "translate(-140%, -48%)");
-  }else if(window.innerWidth <= 1200 && window.innerWidth >= 576){
+  };
+  if(window.innerWidth <= 1200 && window.innerWidth >= 576){
     $("div.content_2").css("transform", "translate(-130%, -46%)");
   };
 };
