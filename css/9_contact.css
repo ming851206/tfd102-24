@@ -244,8 +244,8 @@ div.contact_table > form label:first-child{
 div.contact_table form input,
 div.contact_table form textarea{
   color: #B2B2B2;
-  letter-spacing: 4px;
-  text-indent: 2px;
+  letter-spacing: 2px;
+  text-indent: 4px;
   border: none;
   border-bottom: 1px solid #B2B2B2;
   background-color: rgba(0, 0, 0, 0);
@@ -254,7 +254,7 @@ div.contact_table form textarea{
   font-size: 18px;
   height: 26px;
   line-height: 26px;
-  font-family: 'Noto Serif TC', serif;;
+  font-family: 'Noto Serif TC', serif;
   width: 320px;
   padding: 0;
   margin: 0;
