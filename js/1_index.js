@@ -33,7 +33,11 @@ function detectBrowser(){
 }
 var oBrowser = new detectBrowser();
 if (oBrowser.isSa && !oBrowser.isChr){
-  $("div.content_2").css("transform", "translate(-140%, -48%)");
+  if((window.innerWidth >= 1200){
+    $("div.content_2").css("transform", "translate(-140%, -48%)");
+  }else if(window.innerWidth <= 1200 && window.innerWidth >= 576){
+    $("div.content_2").css("transform", "translate(-130%, -46%)");
+  }
 }
 
 // go-top
