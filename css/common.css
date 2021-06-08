@@ -605,8 +605,8 @@ a.get_pw:hover{
 button.other{
   width: 70px !important;
   height: 45px !important;
-  letter-spacing: 2px !important;
-  text-indent: 1px !important;
+  letter-spacing: 1px !important;
+  text-indent: 0px !important;
   margin: 45px auto !important;
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, .5) !important;
   white-space: nowrap !important;
