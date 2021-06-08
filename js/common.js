@@ -8,9 +8,9 @@ if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
 console.log('Your OS: '+OSName);
 
 if (navigator.appVersion.indexOf("Win")!=-1){
-  $("bg_block").css('transform','translate(-48%, -48%)');
+  $("div.bg_block").css('transform','translate(-48%, -48%)');
 } else {
-  $("bg_block").css('transform','translate(-50%, -50%)');
+  $("div.bg_block").css('transform','translate(-50%, -50%)');
 };
 
 // 側邊導覽列
