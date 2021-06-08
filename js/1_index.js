@@ -25,31 +25,16 @@ $(document).ready(function(){
     cssEase: 'linear'
   });
 });
-// 不同瀏覽器微調
+// safari瀏覽器微調
 function detectBrowser(){
   var sAgent = navigator.userAgent.toLowerCase();
   this.isSa = (sAgent.indexOf("safari")!=-1);
   this.isChr = (sAgent.indexOf("chrom")!=-1);
 }
-
 var oBrowser = new detectBrowser();
-
 if (oBrowser.isSa && !oBrowser.isChr){
-  alert("sa");
   $("div.content_2").css("transform", "translate(-140%, -48%)");
 }
-
-
-// else if (oBrowser.isChr && oBrowser.isSa){
-//   alert("Chrom.");
-// }
-
-// if(is.safari()){
-//   console.log("true");
-
-// }else{
-//   console.log("no");
-// };
 
 // go-top
 $(function(){
