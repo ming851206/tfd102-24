@@ -1,4 +1,12 @@
 // 偵測作業系統
+var OSName="Unknown OS";
+if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+
+console.log('Your OS: '+OSName);
+
 if (navigator.appVersion.indexOf("Win")!=-1){
   $("bg_block").css('transform','translate(-48%, -48%)');
 } else {

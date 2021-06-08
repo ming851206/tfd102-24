@@ -101,7 +101,7 @@ h2.bg_text{
 }
 div.scroll_arrow{
   display: inline-block;
-  background-image: url(../img/1_home/scroll_arrow.png);
+  background-image: url("../img/1_home/scroll_arrow.png");
   width: 90px;
   height: 90px;
   background-size: cover;
