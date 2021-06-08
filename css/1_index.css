@@ -41,7 +41,7 @@ div.bg_block{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-48%, -48%);
+  transform: translate(-50%, -50%);
   background-color: hsla(0, 0%, 100%, .75);
   box-shadow: 0px 0px 30px 45px hsla(0, 0%, 100%, .75);
   opacity: 0;
