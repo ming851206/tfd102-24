@@ -25,17 +25,8 @@ $(document).ready(function(){
     cssEase: 'linear'
   });
 });
-// 不同瀏覽器微調
-// $(function(){
-//   if($.support.safari) {
-//     consolo.log("this is safari!");
-//     $("div.content_2").css("transform", "translate(-140%, -48%)");
-//   };
-// });
-// is.safari();
-// =>   console.log("true");
-      $("div.content_2").css("transform", "translate(-140%, -48%)");
 
+// safari瀏覽器微調
 function detectBrowser(){
   var sAgent = navigator.userAgent.toLowerCase();
   this.isSa = (sAgent.indexOf("safari")!=-1);
