@@ -604,16 +604,25 @@ a.get_pw{
 a.get_pw:hover{
   color: #9D7C62;
 }
-button.other{
-  width: 70px !important;
-  height: 45px !important;
-  letter-spacing: 1px !important;
-  text-indent: 0px !important;
-  margin: 45px auto !important;
-  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, .5) !important;
-  white-space: nowrap !important;
+button.member{
+  width: 70px;
+  height: 45px;
+  letter-spacing: 1px;
+  margin: 45px auto;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, .5);
+  white-space: nowrap;
+  display: block;
+  border: none;
+  font-size: 18px;
+  color: #9D7C62;
+  font-weight: bold;
+  background-color: #F4F0ED;
+  font-family: 'Noto Serif TC', serif;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
-button.other.log_in{
+button.member.log_in{
   margin: 16px auto 45px !important;
 }
 div.member.-on{
