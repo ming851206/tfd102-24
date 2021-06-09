@@ -671,12 +671,12 @@ div.member{
     font-size: 15px;
     height: 34px;
     line-height: 34px;
-    width: 204px;
+    width: 205px;
   }
   ::placeholder{
-    text-indent: 0;
+    text-indent: 2.6px;
     letter-spacing: 0;
-    font-size: 13px;
+    font-size: 12.6px;
   }
   a.get_pw{
     font-size: 14px;
