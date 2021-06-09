@@ -11,8 +11,8 @@ $(function(){
   $("div.menu_bt").on("click", function(){
     $("div.mask").fadeToggle();
     $("div.mobile_navbar").fadeToggle();
-    $("html").css("position", "fixed");
-    $("html").css("width", "100%");
+    // $("html").css("position", "fixed");
+    // $("html").css("width", "100%");
   });
   // 下拉選單縮放
   $("div.order_flower_mobile").on("click", function(){
@@ -23,7 +23,8 @@ $(function(){
   $("div.mask").on("click", function(){
     $(this).fadeToggle();
     $("div.mobile_navbar").fadeToggle();
-    $("html").css("position", "static");
+    // $("html").css("position", "static");
+    // $("html").css("width", "100%");
   });
 });
 
@@ -36,7 +37,8 @@ $(function(){
   });
   $("div.close").on("click", function(){
     $("div.overlay").fadeOut();
-    $("html").css("position", "static")
+    $("html").css("position", "static");
+    $("html").css("width", "100%");
   });
 
   $(function(){
