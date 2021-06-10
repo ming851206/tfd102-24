@@ -31,12 +31,18 @@ $(function(){
 // 會員登入與註冊
 $(function(){
   $("div.member_bt").on("click", function(){
-    $("div.overlay").fadeIn();
-    $("html").css("position", "fixed");
+    $("div.member_container").fadeIn();
+    $("html").css("position", "sticky");
     $("html").css("width", "100%")
   });
   $("div.close").on("click", function(){
-    $("div.overlay").fadeOut();
+    $("div.member_container").fadeOut();
+    $("html").css("position", "static");
+    $("html").css("width", "100%");
+  });
+
+  $("div.overlay").on("click", function(){
+    $("div.member_container").fadeOut();
     $("html").css("position", "static");
     $("html").css("width", "100%");
   });

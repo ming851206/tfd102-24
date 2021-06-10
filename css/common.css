@@ -148,7 +148,7 @@ div.mask{
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, .75);
 }
 /* 右方導覽列 */
 div.mobile_navbar{
@@ -490,15 +490,20 @@ footer p{
   }
 }
 /* 登入、註冊 */
-div.overlay{
+div.member_container{
   display: none;
+}
+div.member_container,
+div.overlay{
   position: fixed;
-  z-index: 7;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .65);
+  z-index: 7;
+}
+div.overlay{
+  background-color: rgba(0, 0, 0, .8);
 }
 div.bg{
   width: 540px;
@@ -506,6 +511,7 @@ div.bg{
   box-shadow:  0 0 20px rgba(255, 255, 255, .95);
   border-radius: 25px;
   position: absolute;
+  z-index: 8;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
