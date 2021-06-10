@@ -522,7 +522,6 @@ div.close{
   height: 42px;
   background-size: contain;
   background-repeat: no-repeat;
-  display: inline-block;
   cursor: pointer;
   float: right;
   margin: 12px;
