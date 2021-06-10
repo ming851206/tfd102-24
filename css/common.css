@@ -612,8 +612,8 @@ a.get_pw:hover{
 button.member{
   width: 70px;
   height: 45px;
-  letter-spacing: 1px;
-  text-indent: 1px;
+  letter-spacing: 2px;
+  text-indent: 2px;
   margin: 45px auto;
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, .5);
   white-space: nowrap;
@@ -627,6 +627,10 @@ button.member{
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
+}
+button.member:hover{
+  color: white;
+  background-color: #9D7C62;
 }
 button.member.log_in{
   margin: 16px auto 45px !important;
