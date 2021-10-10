@@ -11,8 +11,10 @@ $(function(){
   $("div.menu_bt").on("click", function(){
     $("div.mask").fadeToggle();
     $("div.mobile_navbar").fadeToggle();
-    // $("html").css("position", "fixed");
-    // $("html").css("width", "100%");
+    $("html").css({
+      position:" fixed",
+      width: "100%",
+    })
   });
   // 下拉選單縮放
   $("div.order_flower_mobile").on("click", function(){
@@ -20,11 +22,14 @@ $(function(){
 
   });
   // 點擊遮罩，其他東西消失
-  $("div.mask").on("click", function(){
+  $("div.mask").on("click", function(e){
+    e.stopPropagation();
     $(this).fadeToggle();
     $("div.mobile_navbar").fadeToggle();
-    // $("html").css("position", "static");
-    // $("html").css("width", "100%");
+    $("html").css({
+      position: "static",
+      width: "100%",
+    });
   });
 });
 
