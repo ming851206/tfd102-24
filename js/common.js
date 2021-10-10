@@ -12,7 +12,7 @@ $(function(){
     $("div.mask").fadeToggle();
     $("div.mobile_navbar").fadeToggle();
     $("html").css({
-      position:" fixed",
+      position:" sticky",
       width: "100%",
     })
   });
@@ -23,7 +23,6 @@ $(function(){
   });
   // 點擊遮罩，其他東西消失
   $("div.mask").on("click", function(e){
-    e.stopPropagation();
     $(this).fadeToggle();
     $("div.mobile_navbar").fadeToggle();
     $("html").css({
@@ -37,19 +36,25 @@ $(function(){
 $(function(){
   $("div.member_bt").on("click", function(){
     $("div.member_container").fadeIn();
-    $("html").css("position", "sticky");
-    $("html").css("width", "100%")
+    $("html").css({
+        position: "sticky",
+        width: "100%"
+    })
   });
   $("div.close").on("click", function(){
     $("div.member_container").fadeOut();
-    $("html").css("position", "static");
-    $("html").css("width", "100%");
+    $("html").css({
+      position: "static",
+      width: "100%"
+    })
   });
 
   $("div.overlay").on("click", function(){
     $("div.member_container").fadeOut();
-    $("html").css("position", "static");
-    $("html").css("width", "100%");
+    $("html").css({
+      position: "static",
+      width: "100%"
+    })
   });
 
   $(function(){
