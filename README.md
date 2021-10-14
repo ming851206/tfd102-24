@@ -13,3 +13,4 @@
 ------------------------------------------------------------------------------
 
 - 網站連結：https://ming851206.github.io/tfd102-24/
+- 更多介紹：https://drive.google.com/file/d/1-trHC9JzMKKr0OKnoEeIT7-ZYfMGDcz1/view
