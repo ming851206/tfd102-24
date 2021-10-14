@@ -1,9 +1,8 @@
-# tfd102-24
-My first website project. (For practicing HTML, CSS, RWD, JavaScript and  jQuery) 
+「深活豐景」花藝設計工作室
 
-開發時程：2021.04 上旬 - 2021.06 中旬
+- 開發時程：2021.04 上旬 - 2021.06 中旬
 
-網站介紹：
+- 網站介紹：
 1. 以個人平時的「花藝」興趣為主題，所製作的品牌形象官網
 2. 從前期的網站企劃、頁面設計、切版、動畫特效、RWD及功能開發，皆獨自完成
 3. 經全班票選為「最佳RWD獎項」
@@ -11,4 +10,4 @@ My first website project. (For practicing HTML, CSS, RWD, JavaScript and  jQuery
 
 ------------------------------------------------------------------------------
 
-網站連結：https://ming851206.github.io/tfd102-24/
+- 網站連結：https://ming851206.github.io/tfd102-24/
